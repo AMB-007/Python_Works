@@ -1,12 +1,12 @@
 # method one
 num_1 = 10
 num_2 = 20
-#num_1 , num_2 = num_2 , num_1 
+# num_1 , num_2 = num_2 , num_1 
 
-#method two
-#temp = num_2
-#num_2 = num_2
-#num_2 = num_1
+# method two
+# temp = num_2
+# num_2 = num_2
+# num_2 = num_1
 
 # method three
 # using arithematic operators
