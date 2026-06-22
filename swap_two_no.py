@@ -8,8 +8,8 @@ num_2 = 20
 #num_2 = num_2
 #num_2 = num_1
 
-
-#using arithematic operators
+# method three
+# using arithematic operators
 num_1 = num_1 + num_2 #30
 num_2 = num_1 - num_2 #10
 num_1 = num_1 - num_2 #30 - 10
