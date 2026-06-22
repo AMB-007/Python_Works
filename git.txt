@@ -1,3 +1,9 @@
 git add .
 git commit -m "Added new Python programs"
 git push
+
+
+
+git add .
+git commit -m "updated code"
+git push
