@@ -5,5 +5,5 @@ git push
 
 
 git add .
-git commit -m "updated code"
+git commit -m "code updated"
 git push
