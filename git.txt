@@ -3,7 +3,6 @@ git commit -m "Added new Python programs"
 git push
 
 
-
 git add .
 git commit -m "code updated"
 git push
