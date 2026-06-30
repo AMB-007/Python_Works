@@ -6,7 +6,3 @@ git push
 git add .
 git commit -m "code updated"
 git push
-
-git add .
-git commit -m "file name updated and folder changed"
-git push
