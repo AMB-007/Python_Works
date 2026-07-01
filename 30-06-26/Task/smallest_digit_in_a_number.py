@@ -3,7 +3,7 @@
 n = 583926
 smallest = 9
 for i in str(n):
-    digit = int(i)
-    if digit < smallest:
-        smallest = digit
+   
+    if int(i) < smallest:
+        smallest = int(i)
 print(smallest)

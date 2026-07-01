@@ -2,7 +2,7 @@
 n = 583926
 largest = 0
 for i in str(n):
-    digit = int(i)
-    if digit > largest:
-        largest = digit
+    
+    if int(i) > largest:
+        largest = int(i)
 print(largest)
