@@ -33,6 +33,6 @@ for i in range(100,1001):
     else:
         print(i)
         count += 1
-        if count == 10:
+    if count == 10:
             break
         
