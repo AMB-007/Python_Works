@@ -1,15 +1,15 @@
 
 
-# # n = int(input("Enter N :"))
-# # if n > 1:
-# #     for i in range(2,n):
-# #         if n %i == 0:
-# #             print(f"not prime")
-# #             break
-# #     else:
-# #         print(f"Its prime")
-# # else:
-# #     print(f"Getout")
+# n = int(input("Enter N :"))
+# if n > 1:
+#     for i in range(2,n):
+#         if n %i == 0:
+#             print(f"not prime")
+#             break
+#     else:
+#         print(f"Its prime")
+# else:
+#     print(f"Getout")
 
 
 
