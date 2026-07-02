@@ -6,7 +6,7 @@ for i in range(1,n+1):
        
         sum += int(j)
     if sum == 10:
-         print(i)
+        print(i)
 
 
 
