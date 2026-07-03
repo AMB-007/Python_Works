@@ -4,3 +4,6 @@ text.lower # return a copy of string joined in lowercase
 text.capitalize # Python
 text.count("p") # show the count of the letter    ,    returns the total occurnce of the character
 text.index("t") # show the index of the text   ,   returns the index value of the character first occured
+text.find() # returns the index from the first occurence else returns -1
+
+#isalphs(),isalnum().islower(),isupper().endswith(),
