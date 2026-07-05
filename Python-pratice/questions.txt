@@ -1,0 +1,40 @@
+Level 1: Basic (for loop)
+
+
+Print numbers from 1 to 10.
+Print numbers from 10 to 1.
+Print all even numbers from 1 to 50.
+Print all odd numbers from 1 to 50.
+Print the multiplication table of a given number.
+Find the sum of numbers from 1 to N.
+Find the factorial of a number.
+Count how many numbers are divisible by 3 between 1 and N.
+Print the square of numbers from 1 to N.
+Print the cube of numbers from 1 to N.
+
+
+Level 2: Number Logic (for loop)
+
+
+Find the sum of all even numbers between 1 and N.
+Find the sum of all odd numbers between 1 and N.
+Count the digits in a number.
+Reverse a number.
+Check whether a number is a palindrome.
+Find the largest digit in a number.
+Find the smallest digit in a number.
+Find the sum of digits.
+Find the product of digits.
+Print every digit separately.
+
+
+
+
+Level 4: Prime Numbers
+
+Check whether a number is prime.
+Print all prime numbers from 1 to N.
+Count the number of primes from 1 to N.
+Print the first N prime numbers.
+Find the next prime number after N.
+Print the difference between consecutive prime numbers.
