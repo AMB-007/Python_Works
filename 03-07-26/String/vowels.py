@@ -2,9 +2,10 @@
 
 text = input("enter the text :")
 vowels = "AEIOUaeiou"
-count = 0
+new = ""
+#count = 0
 for i in text:
     if i  in vowels:
-        count += 1
-        print(i)
-print(count)
+        #count += 1
+        new += i
+        print(new)
