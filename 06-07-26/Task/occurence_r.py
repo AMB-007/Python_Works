@@ -1,0 +1,1 @@
+# Find the first occurrence of a given character.Sample Input: String=programming, Character=r

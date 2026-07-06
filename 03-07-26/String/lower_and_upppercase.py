@@ -24,25 +24,25 @@
 # wap to get the count of uppercase letters and lowercase from the string below
 # text = "ProGraMMinGLanGUAge"
 
-# text = "ProGraMMinGLanGUAge"
-# lower_count = 0
-# upper_count = 0
-# for i in text:
-#     if i.isupper():
-       
-#         upper_count += 1
-#     else:
-
-#         lower_count += 1
-# print(upper_count)
-# print(lower_count)
-
-
-
 text = "ProGraMMinGLanGUAge"
-new = ""
+lower_count = 0
+upper_count = 0
 for i in text:
-    if i.islower():
-        new += i
-print(new)
+    if i.isupper():
+       
+        upper_count += 1
+    else:
+
+        lower_count += 1
+print(upper_count)
+print(lower_count)
+
+
+
+# text = "ProGraMMinGLanGUAge"
+# new = ""
+# for i in text:
+#     if i.islower():
+#         new += i
+# print(new)
 
