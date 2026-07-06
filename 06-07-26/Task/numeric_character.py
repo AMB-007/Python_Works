@@ -4,4 +4,4 @@ text = "Ab12Cd345"
 
 for i in text:
     if i.isdigit():
-        print(i, end="")
+        print(i, end="") 
