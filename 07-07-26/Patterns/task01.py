@@ -53,4 +53,21 @@ output
 *****
 """
 
+#prime
+#armstrong
+# nested for loop
+
+"""
+for i in range(5):
+    for j in range(5):
+        print(i,end="")
+    print()
+
+
+00000
+11111
+22222
+33333
+44444
+"""
 
