@@ -1,8 +1,8 @@
 # print every second character
 
-text = "Python"  # y h n
+text = "Pythontp"  # y h n
 new = "" 
-for i in text:
-    if text.index(i) %2 != 0:
-        new += i
+for i in range(len(text)):
+    if i % 2 != 0:
+        new += text[i]
 print(new)

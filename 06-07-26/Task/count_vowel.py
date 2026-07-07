@@ -1,6 +1,6 @@
 # count how many times each vowel appears.Sample Input: Education
 
-text = "education"
+text = "Education"
 text = text.lower()
 vowels = "aeiou"
 count = 0
