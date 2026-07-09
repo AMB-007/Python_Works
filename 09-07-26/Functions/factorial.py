@@ -6,6 +6,7 @@ def factorial(num_1):
     for i in range(1,num_1+1):
         fact *= i
     print(fact)
-factorial(5)
 
-
+for i in range(10):
+    n = int(input("Enter the number :"))
+    factorial(n)
