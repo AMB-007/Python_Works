@@ -20,3 +20,8 @@ def functionname()
 
 functionname()         #function caller
 """
+
+
+def greet():
+    print("gud mrng")
+greet()
