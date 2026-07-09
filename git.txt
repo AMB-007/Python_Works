@@ -12,11 +12,3 @@ git push
 git add .
 git commit -m "Added Python function and list programs"
 git push
-
-Write a program to find the largest Armstrong number within a given range.
-An Armstrong number is a number that is equal to the sum of its own digits 
-each raised to the power of the number of digits.
-
-2) A Twin Prime is a pair of prime numbers that differ by exactly 2 
-(for example, 3 and 5, or 11 and 13).Write a program that finds and prints all
-"Twin Prime" pairs up to a limit of n.
