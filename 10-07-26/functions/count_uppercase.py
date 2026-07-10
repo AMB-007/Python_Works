@@ -18,6 +18,7 @@ for ch in text:
         digit += 1
     else:
         special += 1
+
 print(upper)
 print(lower)
 print(special)
