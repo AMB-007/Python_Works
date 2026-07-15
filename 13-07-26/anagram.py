@@ -10,3 +10,4 @@ def is_anagram(text_1,text_2):
     else:
         print("not anagram")
 is_anagram("silent","listen")
+
