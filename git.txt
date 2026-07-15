@@ -4,10 +4,6 @@ git push
 
 
 
-git add .
-git commit -m "Added Python function and list programs"
-git push
-
 
 git add .
 git commit -m "code updated"
