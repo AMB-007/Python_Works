@@ -1,15 +1,27 @@
+# numbers = [1,2,3,4,5,6,7]
+# target =  [9]    #[2,3,4]
+
+# # define a function which accepts the list and return the three numbers sum
+# # which equals to the target
+
+# numbers = [3,4,5,1]
+# target =  [7]#[3,4]
+
+# # define a function which accepts the list and return the two numbers sum
+# # which equals to the target
+
+# def twonumbersum(elements):
+#     pass
+# twonumbersum(numbers)
+
+
+
 numbers = [1,2,3,4,5,6,7]
-target =  [9]    #[2,3,4]
-
-# define a function which accepts the list and return the three numbers sum
-# which equals to the target
-
-numbers = [3,4,5,1]
-target =  [7]#[3,4]
-
-# define a function which accepts the list and return the two numbers sum
-# which equals to the target
-
-def twonumbersum(elements):
-    pass
-twonumbersum(numbers)
+target = 7
+result= []
+for i in range(len(numbers)):
+    for j in range(i,(len(numbers))):
+        if numbers[i] + numbers[j] == target:
+            result.append([numbers[i],numbers[j]])
+print(result)
+        
