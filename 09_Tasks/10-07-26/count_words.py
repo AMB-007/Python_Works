@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count words.
+
 def count_words(text):
     words = text.split()
     return len(words)

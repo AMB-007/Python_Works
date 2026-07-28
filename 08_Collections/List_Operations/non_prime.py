@@ -1,4 +1,4 @@
-# wap to remove all the prime numbers(should be greater than 1 )from the list
+﻿# Question: wap to remove all the prime numbers(should be greater than 1 )from the list
 
 numbers = [3,1,5,8,6,14,13,11]
 for i in numbers.copy():

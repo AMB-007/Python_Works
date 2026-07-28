@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for prime.
+
 
 
 # n = int(input("Enter N :"))
@@ -36,3 +38,4 @@ for i in range(100,1001):
     if count == 10:
             break
         
+

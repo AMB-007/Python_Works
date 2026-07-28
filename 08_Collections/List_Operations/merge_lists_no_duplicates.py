@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for merge lists no duplicates.
+
 # merge these  two list without duplicates
 
 list1 = [1,2,3,4,5]

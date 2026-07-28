@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for product num.
+
 n = int(input("Enter the number :"))
 i = 1
 product = 1

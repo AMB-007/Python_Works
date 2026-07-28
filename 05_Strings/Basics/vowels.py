@@ -1,4 +1,4 @@
-# wap to print the vowels in the stirng enter by user
+﻿# Question: wap to print the vowels in the stirng enter by user
 
 text = input("enter the text :")
 vowels = "AEIOUaeiou"
@@ -9,3 +9,4 @@ for i in text:
         #count += 1
         new += i
         print(new)
+

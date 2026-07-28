@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for raining.
+
 raining = input("Is it raining? (yes/no): ").lower()
 
 if raining == "yes":

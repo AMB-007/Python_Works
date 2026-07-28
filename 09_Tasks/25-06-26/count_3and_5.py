@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count 3and 5.
+
 n = int(input("Enter the number :"))
 i = 1
 count = 0

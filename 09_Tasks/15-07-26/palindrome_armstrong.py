@@ -1,4 +1,4 @@
-#  Find Palindrome and Armstrong Numbers
+﻿# Question: Find Palindrome and Armstrong Numbers
 # Sample Input: [121,153,123,370,454,407,99]
 
 

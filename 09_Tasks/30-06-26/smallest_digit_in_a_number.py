@@ -1,4 +1,4 @@
-# Find the smallest digit in a number.Sample Input: N = 583926
+﻿# Question: Find the smallest digit in a number.Sample Input: N = 583926
 
 n = 583926
 smallest = 9

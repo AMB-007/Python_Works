@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for Hospital Emergency.
+
 priority = int(input("Enter the a button for a treatment:"))
 
 if priority == 0:

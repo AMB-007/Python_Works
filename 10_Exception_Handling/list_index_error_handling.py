@@ -1,4 +1,6 @@
-﻿# Handling IndexError with finally block when accessing list elements by index
+﻿# Question: Write a Python program for list index error handling.
+
+# Handling IndexError with finally block when accessing list elements by index
 
 words = ["python", "java", "c++", "javascript", "ruby"]
 
@@ -11,3 +13,4 @@ except ValueError:
     print("Error: Invalid integer index.")
 finally:
     print("Finally block: Execution completed.")
+

@@ -1,4 +1,4 @@
-﻿# Count uppercase and lowercase letters in a string
+﻿# Question: Count uppercase and lowercase letters in a string
 
 text = "ProGraMMinGLanGUAge"
 lower_count = 0
@@ -12,3 +12,4 @@ for ch in text:
 
 print("Uppercase count:", upper_count)
 print("Lowercase count:", lower_count)
+

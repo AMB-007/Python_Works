@@ -1,4 +1,4 @@
-# define a function to check a number is perfect ot not using return statement
+﻿# Question: define a function to check a number is perfect ot not using return statement
 def perfect(n):
     total = 0
     for i in range(1, n//2 + 1):
@@ -7,6 +7,7 @@ def perfect(n):
     return "perfect" if total == n else "not perfect"
 
 print(perfect(6))
+
 
 
 

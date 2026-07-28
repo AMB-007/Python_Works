@@ -1,4 +1,4 @@
-# define a function to check the given number is prime or not
+﻿# Question: define a function to check the given number is prime or not
 
 def is_prime(num_1):
     
@@ -11,6 +11,7 @@ def is_prime(num_1):
     else:
         print("prime")
 is_prime(7)
+
 
 
 

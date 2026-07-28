@@ -1,4 +1,4 @@
-#Count the occurrence of a given character.Sample Input: String=programming, Character=g
+﻿# Question: Count the occurrence of a given character.Sample Input: String=programming, Character=g
 text = "programming"
 char = "g"
 count = 0;

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for armstrong.
+
 num = 1634
 
 

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for reverse only strings.
+
 # Reverse Only the Strings
 # Reverse only string elements; keep numbers unchanged.
 # Sample Input: ['python',10,'django',20,'AI']

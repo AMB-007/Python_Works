@@ -1,12 +1,14 @@
+﻿# Question: Write a Python program for frequency and search.
+
 # ============================================================
-#  TOPIC: Strings — Frequency & Search
+#  TOPIC: Strings â€” Frequency & Search
 # ============================================================
 
 # DEFINITION:
 #   Frequency problems count how often characters or words appear.
 #   Search problems find, locate, or filter specific elements.
 
-# ── CHARACTER FREQUENCY ───────────────────────────────────
+# â”€â”€ CHARACTER FREQUENCY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Count how many times each character appears in a string.
 
 s = "banana"
@@ -30,7 +32,7 @@ from collections import Counter
 freq = Counter(s)
 print(freq)    # Counter({'a': 3, 'n': 2, 'b': 1})
 
-# ── LARGEST / MOST FREQUENT CHARACTER ────────────────────
+# â”€â”€ LARGEST / MOST FREQUENT CHARACTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 s = "aababccc"
 freq = {}
 for ch in s:
@@ -45,7 +47,7 @@ from collections import Counter
 most_common = Counter(s).most_common(1)[0]
 print(most_common)   # ('c', 3)
 
-# ── UNIQUE CHARACTERS ─────────────────────────────────────
+# â”€â”€ UNIQUE CHARACTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Characters that appear exactly ONCE.
 
 s = "abracadabra"
@@ -62,7 +64,7 @@ for ch in s:
         seen.add(ch)
 print("No duplicates:", result)   # abrcd
 
-# ── FIRST REPEATING CHARACTER ─────────────────────────────
+# â”€â”€ FIRST REPEATING CHARACTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # First character that appears more than once.
 
 s = "abcabd"
@@ -75,7 +77,7 @@ for ch in s:
     seen.add(ch)
 print("First repeating:", first_repeat)   # a
 
-# ── STRING SEARCH METHODS ─────────────────────────────────
+# â”€â”€ STRING SEARCH METHODS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 s = "Hello World Python"
 
@@ -97,7 +99,7 @@ print("Java" in s)        # False
 print(s.startswith("Hello"))    # True
 print(s.endswith("Python"))     # True
 
-# ── SEARCH IN WORD LIST ───────────────────────────────────
+# â”€â”€ SEARCH IN WORD LIST â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 sentence = "the quick brown fox jumps"
 words = sentence.split()      # ['the', 'quick', 'brown', 'fox', 'jumps']
@@ -111,7 +113,8 @@ filtered = [w for w in words if w.startswith("q")]
 print(filtered)    # ['quick']
 
 # KEY POINTS:
-#   → dict.get(key, 0) avoids KeyError — returns 0 if key missing
-#   → Counter from collections is the most efficient for frequency
-#   → find() is safe (returns -1), index() raises error if not found
-#   → Use set() to track visited elements in O(1) time
+#   â†’ dict.get(key, 0) avoids KeyError â€” returns 0 if key missing
+#   â†’ Counter from collections is the most efficient for frequency
+#   â†’ find() is safe (returns -1), index() raises error if not found
+#   â†’ Use set() to track visited elements in O(1) time
+

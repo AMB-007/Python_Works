@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for print factors.
+
 def factors(num):
 
     result = []

@@ -1,5 +1,7 @@
+﻿# Question: Write a Python program for args and kwargs.
+
 # ============================================================
-#  TOPIC: Functions — *args and **kwargs
+#  TOPIC: Functions â€” *args and **kwargs
 # ============================================================
 
 # DEFINITION:
@@ -9,7 +11,7 @@
 #   **kwargs allows a function to accept ANY NUMBER of keyword
 #   arguments. They are received as a DICTIONARY inside the function.
 
-# ── *args (Variable Positional Arguments) ────────────────
+# â”€â”€ *args (Variable Positional Arguments) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # SYNTAX:  def func(*args):
 #   The * before the name collects all extra positional args into a tuple.
 
@@ -39,7 +41,7 @@ greet("Hello", "Arjun", "Ravi", "Priya")
 # Hello, Ravi!
 # Hello, Priya!
 
-# ── **kwargs (Variable Keyword Arguments) ────────────────
+# â”€â”€ **kwargs (Variable Keyword Arguments) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # SYNTAX:  def func(**kwargs):
 #   The ** collects all keyword arguments into a dictionary.
 
@@ -50,8 +52,8 @@ def show_info(**kwargs):
 
 show_info(name="Arjun", age=21, city="Chennai")
 
-# ── Combining both ────────────────────────────────────────
-# ORDER: normal params → *args → **kwargs
+# â”€â”€ Combining both â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ORDER: normal params â†’ *args â†’ **kwargs
 
 def full_example(required, *args, **kwargs):
     print("Required:", required)
@@ -63,7 +65,7 @@ full_example("must", 1, 2, 3, name="Arjun", age=21)
 # Extra args: (1, 2, 3)
 # Keyword args: {'name': 'Arjun', 'age': 21}
 
-# ── Unpacking with * and ** ───────────────────────────────
+# â”€â”€ Unpacking with * and ** â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # You can also UNPACK a list/tuple into positional args:
 def add(a, b, c):
     return a + b + c
@@ -76,8 +78,9 @@ info = {"a": 10, "b": 20, "c": 30}
 print(add(**info))      # 60
 
 # KEY POINTS:
-#   → *args  → tuple  → access like args[0], or loop with for
-#   → **kwargs → dict → access like kwargs["key"] or .items()
-#   → Order in definition: (normal, *args, **kwargs)
-#   → * and ** can also UNPACK when calling a function
-#   → You can name them anything: *numbers, **options — * and ** matter
+#   â†’ *args  â†’ tuple  â†’ access like args[0], or loop with for
+#   â†’ **kwargs â†’ dict â†’ access like kwargs["key"] or .items()
+#   â†’ Order in definition: (normal, *args, **kwargs)
+#   â†’ * and ** can also UNPACK when calling a function
+#   â†’ You can name them anything: *numbers, **options â€” * and ** matter
+

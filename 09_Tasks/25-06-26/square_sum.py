@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for square sum.
+
 n = int(input("Enter the number :"))
 i = 1
 sum = 0

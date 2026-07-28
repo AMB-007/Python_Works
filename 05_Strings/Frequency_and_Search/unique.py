@@ -1,4 +1,4 @@
-# wap to get the unique characters from the string joined together
+﻿# Question: wap to get the unique characters from the string joined together
 
 text = "programming"  # output = "programin"
 new = ""
@@ -9,3 +9,4 @@ for i in text:
         count += 1
 print(new)
 print(count)
+

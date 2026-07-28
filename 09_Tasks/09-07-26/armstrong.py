@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for armstrong.
+
 def armstrong(n):
     temp = n
     total = 0

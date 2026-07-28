@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for factorial.
+
 # definr=e a function to return the factorial
 
 
@@ -10,3 +12,4 @@ def factorial(num_1):
 for i in range(10):
     n = int(input("Enter the number :"))
     factorial(n)
+

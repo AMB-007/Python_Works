@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to calculate road tax for a bike based on its cost.
+
 bike = int(input("Ente the bike price :"))
 
 if bike > 20000:

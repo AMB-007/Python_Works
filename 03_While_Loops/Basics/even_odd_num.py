@@ -1,4 +1,4 @@
-# wap to get the sum of even numbers and odd numbers upto n
+﻿# Question: wap to get the sum of even numbers and odd numbers upto n
 n = 20
 i = 1
 sum_even = 0
@@ -12,5 +12,6 @@ while(i <= 20):
     i += 1
 print(sum_even)
 print(sum_odd)
+
 
 

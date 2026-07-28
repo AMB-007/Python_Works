@@ -1,3 +1,5 @@
+﻿# Question: Write a Python function to check whether a sentence is a pangram (contains all alphabet letters).
+
 def is_panagram(text):
     alpha = "abcdefghijklmnopqrstuvwxyz"
 

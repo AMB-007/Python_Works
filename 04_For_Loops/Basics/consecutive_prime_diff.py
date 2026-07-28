@@ -1,4 +1,4 @@
-#Print the difference between every pair of consecutive prime numbers from 1 to N.
+﻿# Question: Print the difference between every pair of consecutive prime numbers from 1 to N.
 n = 20
 prev = 0
 

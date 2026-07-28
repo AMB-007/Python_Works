@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for Smart traffic fine system.
+
 speed = int(input("Enter the speed :"))
 
 if speed >= 0 and speed <= 60:

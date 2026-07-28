@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for sum of digits.
+
 def sum_of_digits(num):
 
     total = 0

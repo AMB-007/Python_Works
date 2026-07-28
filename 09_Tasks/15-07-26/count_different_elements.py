@@ -1,4 +1,4 @@
-# Count Different Types of Elements (Use type())
+﻿# Question: Count Different Types of Elements (Use type())
 # Given a mixed list, use type() to identify each element. If it is a string, further classify it
 # using isalpha(), isdigit(), or special character checks. Count alphabets, digits, and
 # special characters.

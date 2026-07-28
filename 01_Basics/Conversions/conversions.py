@@ -1,31 +1,33 @@
+﻿# Question: Write a Python program for conversions.
+
 # ============================================================
 #  TOPIC: Conversions in Python
 # ============================================================
 
 # DEFINITION:
 #   Conversions means changing a value from one unit or type
-#   to another — either unit conversions (e.g. °C to °F) or
+#   to another â€” either unit conversions (e.g. Â°C to Â°F) or
 #   type conversions (e.g. string to integer).
 
-# ── TYPE CONVERSIONS (Casting) ────────────────────────────
-#   int(x)    → converts x to integer     : int("5") = 5
-#   float(x)  → converts x to float       : float("3.14") = 3.14
-#   str(x)    → converts x to string      : str(100) = "100"
-#   bool(x)   → converts x to boolean     : bool(0) = False
+# â”€â”€ TYPE CONVERSIONS (Casting) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+#   int(x)    â†’ converts x to integer     : int("5") = 5
+#   float(x)  â†’ converts x to float       : float("3.14") = 3.14
+#   str(x)    â†’ converts x to string      : str(100) = "100"
+#   bool(x)   â†’ converts x to boolean     : bool(0) = False
 
-# EXAMPLES – Type Conversion:
+# EXAMPLES â€“ Type Conversion:
 age = int(input("Enter age: "))        # input() always returns str
 price = float(input("Enter price: "))  # convert to float for decimals
 print(str(age) + " years old")         # convert back to str for joining
 
-# ── UNIT CONVERSIONS ─────────────────────────────────────
+# â”€â”€ UNIT CONVERSIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-# Celsius to Fahrenheit:  F = (C × 9/5) + 32
+# Celsius to Fahrenheit:  F = (C Ã— 9/5) + 32
 celsius = 37
 fahrenheit = (celsius * 9/5) + 32
 print(fahrenheit)    # 98.6
 
-# Fahrenheit to Celsius:  C = (F - 32) × 5/9
+# Fahrenheit to Celsius:  C = (F - 32) Ã— 5/9
 fahrenheit = 98.6
 celsius = (fahrenheit - 32) * 5/9
 print(round(celsius, 1))    # 37.0
@@ -35,7 +37,7 @@ years = 3
 days = years * 365
 print(days)    # 1095
 
-# Total Seconds → Days, Hours, Minutes, Seconds:
+# Total Seconds â†’ Days, Hours, Minutes, Seconds:
 total_seconds = 100000
 days    = total_seconds // 86400       # 86400 = 24*60*60
 remaining = total_seconds % 86400
@@ -46,6 +48,7 @@ seconds = remaining % 60
 print(f"{days}d {hours}h {minutes}m {seconds}s")
 
 # KEY POINTS:
-#   → input() always returns a STRING — always convert it
-#   → int() truncates decimals: int(3.9) = 3
-#   → Use round() to control decimal places in float results
+#   â†’ input() always returns a STRING â€” always convert it
+#   â†’ int() truncates decimals: int(3.9) = 3
+#   â†’ Use round() to control decimal places in float results
+

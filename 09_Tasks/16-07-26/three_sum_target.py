@@ -1,4 +1,4 @@
-﻿# Find pairs/triplets in a list that add up to a target sum
+﻿# Question: Find pairs/triplets in a list that add up to a target sum
 
 numbers = [1, 2, 3, 4, 5, 6, 7]
 target = 7
@@ -10,3 +10,4 @@ for i in range(len(numbers)):
             result.append([numbers[i], numbers[j]])
 
 print(f"Pairs adding to target {target}:", result)
+

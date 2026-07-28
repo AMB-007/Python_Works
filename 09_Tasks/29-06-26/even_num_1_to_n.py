@@ -1,4 +1,4 @@
-# Find the sum of even numbers from 1 to N.Sample Input: N = 20
+﻿# Question: Find the sum of even numbers from 1 to N.Sample Input: N = 20
 n = int(input("Enter N :"))
 
 sum = 0

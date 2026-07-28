@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for remove vowels.
+
 def remove_vowel(text):
     vowels = "AEIOUaeiou"
     for ch in text:

@@ -1,4 +1,6 @@
-﻿# Filter mobiles with price above 90k and color black
+﻿# Question: Write a Python program for filter mobiles by price and color.
+
+# Filter mobiles with price above 90k and color black
 
 mobiles = {
     "Apple": {"model": "iPhone 13", "price": 120000, "color": "black"},
@@ -12,3 +14,4 @@ for brand, details in mobiles.items():
     color = details.get("color")
     if price > 90000 and color == "black":
         print(f"- {brand}: {details}")
+

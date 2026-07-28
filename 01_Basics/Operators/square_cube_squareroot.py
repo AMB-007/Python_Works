@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to calculate the square, cube, and square root of a given number.
+
 num = int(input("Enter the number :"))
 
 square = num * num

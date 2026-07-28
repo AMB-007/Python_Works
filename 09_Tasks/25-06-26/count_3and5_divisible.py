@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count 3and5 divisible.
+
 n = int(input("Enter the number :"))
 i = 1
 count = 0
@@ -6,3 +8,4 @@ while( i <= n):
         count += 1
     i += 1
 print(count)
+

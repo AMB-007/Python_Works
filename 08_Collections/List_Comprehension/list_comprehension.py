@@ -1,5 +1,7 @@
+﻿# Question: Write a Python program for list comprehension.
+
 # ============================================================
-#  TOPIC: Collections — List Comprehension
+#  TOPIC: Collections â€” List Comprehension
 # ============================================================
 
 # DEFINITION:
@@ -12,7 +14,7 @@
 #   [expression  for  item  in  iterable]
 #   [expression  for  item  in  iterable  if  condition]
 
-# ── BASIC EXAMPLES ────────────────────────────────────────
+# â”€â”€ BASIC EXAMPLES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Without list comprehension:
 squares = []
@@ -24,7 +26,7 @@ print(squares)    # [1, 4, 9, 16, 25]
 squares = [x ** 2 for x in range(1, 6)]
 print(squares)    # [1, 4, 9, 16, 25]
 
-# ── WITH CONDITION (filtering) ────────────────────────────
+# â”€â”€ WITH CONDITION (filtering) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # [expression for item in iterable if condition]
 
 # Even numbers from 1 to 20:
@@ -38,7 +40,7 @@ odds = [x for x in range(1, 21) if x % 2 != 0]
 mult3 = [x for x in range(1, 31) if x % 3 == 0]
 print(mult3)    # [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
 
-# ── WITH STRINGS ──────────────────────────────────────────
+# â”€â”€ WITH STRINGS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Uppercase each word:
 words = ["hello", "world", "python"]
@@ -54,14 +56,14 @@ s = "hello world"
 vowels = [ch for ch in s if ch in "aeiou"]
 print(vowels)    # ['e', 'o', 'o']
 
-# ── IF-ELSE IN COMPREHENSION ──────────────────────────────
+# â”€â”€ IF-ELSE IN COMPREHENSION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # When using if-else, the condition goes BEFORE the for:
 
 nums = [1, 2, 3, 4, 5, 6]
 labels = ["Even" if x % 2 == 0 else "Odd" for x in nums]
 print(labels)    # ['Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even']
 
-# ── NESTED LIST COMPREHENSION ─────────────────────────────
+# â”€â”€ NESTED LIST COMPREHENSION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Creating a multiplication table (2D list):
 table = [[i * j for j in range(1, 4)] for i in range(1, 4)]
 print(table)
@@ -72,7 +74,7 @@ matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flat = [item for row in matrix for item in row]
 print(flat)    # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# ── PRACTICAL EXAMPLES ────────────────────────────────────
+# â”€â”€ PRACTICAL EXAMPLES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Squares of even numbers only:
 result = [x**2 for x in range(1, 11) if x % 2 == 0]
@@ -89,9 +91,10 @@ lengths = [len(w) for w in words]
 print(lengths)    # [3, 8, 3, 3]
 
 # KEY POINTS:
-#   → Faster and more readable than a regular for loop + append
-#   → if FILTER: [expr for x in lst if condition]
-#   → if-ELSE: [expr1 if cond else expr2 for x in lst]  ← note position!
-#   → Avoid deeply nested comprehensions — they hurt readability
-#   → You can also create: set comprehension {x for x in lst}
+#   â†’ Faster and more readable than a regular for loop + append
+#   â†’ if FILTER: [expr for x in lst if condition]
+#   â†’ if-ELSE: [expr1 if cond else expr2 for x in lst]  â† note position!
+#   â†’ Avoid deeply nested comprehensions â€” they hurt readability
+#   â†’ You can also create: set comprehension {x for x in lst}
 #                          dict comprehension {k: v for k, v in items}
+

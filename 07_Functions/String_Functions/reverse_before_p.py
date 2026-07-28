@@ -1,3 +1,5 @@
+﻿# Question: Write a Python function to reverse characters before letter 'p' in a string.
+
 def reverse(text):
     for i in text:
         if i == "p":

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for even odd.
+
 n = int(input("Enter a number "))
 i = 1
 while (i <= n):

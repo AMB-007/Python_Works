@@ -1,4 +1,4 @@
-# count how many times each vowel appears.Sample Input: Education
+﻿# Question: count how many times each vowel appears.Sample Input: Education
 
 text = "Education"
 text = text.lower()

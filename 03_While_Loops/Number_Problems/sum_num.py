@@ -1,4 +1,4 @@
-# wap to get the sum of even numbers from 1 to 20
+﻿# Question: wap to get the sum of even numbers from 1 to 20
 i = 1
 sum = 0
 while( i <= 20):

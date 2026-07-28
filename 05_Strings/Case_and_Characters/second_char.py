@@ -1,4 +1,4 @@
-# print every second character
+﻿# Question: print every second character
 
 text = "Pythontp"  # y h n
 new = "" 

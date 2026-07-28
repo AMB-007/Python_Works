@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for interleave two lists.
+
 char_1 = ["a","b","c"]
 char_2 = ["p","q","r","s"]
 
@@ -16,5 +18,6 @@ for i in char_2[len(char_1):]:
 #     result += char_2i
 
 print(result)
+
 
 

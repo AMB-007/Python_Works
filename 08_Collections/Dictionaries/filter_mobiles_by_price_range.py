@@ -1,4 +1,6 @@
-﻿# Filter mobile model names with price between 50k and 100k
+﻿# Question: Write a Python program for filter mobiles by price range.
+
+# Filter mobile model names with price between 50k and 100k
 
 mobiles = {
     "Apple": {"model": "iPhone 13", "price": 120000, "color": "black"},
@@ -12,3 +14,4 @@ for brand, details in mobiles.items():
     price = details.get("price")
     if 50000 <= price <= 100000:
         print(f"- {model} (Rs. {price})")
+

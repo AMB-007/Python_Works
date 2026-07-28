@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for factorial dup1.
+
 # definr=e a function to return the factorial
 
 
@@ -16,3 +18,4 @@ the return statement is used inside a function to send a value back to the place
 Where the function was called
 once return is executed the function stops running
 """
+

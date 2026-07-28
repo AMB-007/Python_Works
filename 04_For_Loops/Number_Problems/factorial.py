@@ -1,4 +1,4 @@
-# wap to get factorial of a given number(enter by user)
+﻿# Question: wap to get factorial of a given number(enter by user)
 
 n = int(input("Enter N :"))
 

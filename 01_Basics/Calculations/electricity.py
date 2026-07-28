@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to calculate total electricity bill based on units consumed and rate per unit.
+
 units = float(input("Enter the units consumed: "))
 rate_per_unit = float(input("Enter the rate per unit: "))
 

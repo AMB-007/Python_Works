@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to demonstrate comparison/relational operators.
+
 number_1 = int(input("Enter the the first number:"))
 number_2 = int(input("ENter the second number:"))
 
@@ -7,3 +9,4 @@ print("Its:",(number_1 == number_2))
 print(number_1 != number_2)
 print(number_1 >= number_2)
 print(number_1 <= number_2)
+

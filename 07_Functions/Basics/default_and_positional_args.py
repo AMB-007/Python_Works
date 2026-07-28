@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for default and positional args.
+
 def details(name,place,role = "dev"):
     print(f"hii{name}u are frm{place}in u are a {role}")
 

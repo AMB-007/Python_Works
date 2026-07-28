@@ -1,3 +1,5 @@
+﻿# Question: Write a Python function to check whether two given strings are anagrams of each other.
+
 def is_anagram(text_1,text_2):
     if len(text_1) == len(text_2):
         for i in text_1:
@@ -10,4 +12,5 @@ def is_anagram(text_1,text_2):
     else:
         print("not anagram")
 is_anagram("silent","listen")
+
 

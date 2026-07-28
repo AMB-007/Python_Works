@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for patterns.
+
 # ============================================================
 #  TOPIC: Patterns (Star / Number Patterns)
 # ============================================================
@@ -8,12 +10,12 @@
 #   The outer loop controls the ROWS, inner loop controls COLUMNS.
 
 # RULE OF THUMB:
-#   Outer loop → number of rows
-#   Inner loop → number of items per row
-#   end=""     → stay on the same line
-#   print()    → move to the next line (after inner loop)
+#   Outer loop â†’ number of rows
+#   Inner loop â†’ number of items per row
+#   end=""     â†’ stay on the same line
+#   print()    â†’ move to the next line (after inner loop)
 
-# ── 1. RIGHT TRIANGLE (Star) ──────────────────────────────
+# â”€â”€ 1. RIGHT TRIANGLE (Star) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #   *
 #   * *
 #   * * *
@@ -25,7 +27,7 @@ for i in range(1, n + 1):
         print("*", end=" ")
     print()
 
-# ── 2. INVERTED RIGHT TRIANGLE ────────────────────────────
+# â”€â”€ 2. INVERTED RIGHT TRIANGLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #   * * * *
 #   * * *
 #   * *
@@ -36,7 +38,7 @@ for i in range(n, 0, -1):
         print("*", end=" ")
     print()
 
-# ── 3. NUMBER TRIANGLE ────────────────────────────────────
+# â”€â”€ 3. NUMBER TRIANGLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #   1
 #   1 2
 #   1 2 3
@@ -46,7 +48,7 @@ for i in range(1, n + 1):
         print(j, end=" ")
     print()
 
-# ── 4. PYRAMID (Centered) ─────────────────────────────────
+# â”€â”€ 4. PYRAMID (Centered) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #      *
 #     ***
 #    *****
@@ -55,7 +57,7 @@ for i in range(1, n + 1):
     print(" " * (n - i), end="")    # spaces before
     print("*" * (2 * i - 1))        # stars
 
-# ── 5. INVERTED PYRAMID ───────────────────────────────────
+# â”€â”€ 5. INVERTED PYRAMID â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #    *****
 #     ***
 #      *
@@ -64,7 +66,7 @@ for i in range(n, 0, -1):
     print(" " * (n - i), end="")
     print("*" * (2 * i - 1))
 
-# ── 6. DIAMOND ────────────────────────────────────────────
+# â”€â”€ 6. DIAMOND â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #      *
 #     ***
 #    *****
@@ -78,7 +80,7 @@ for i in range(1, n + 1):
 for i in range(n - 1, 0, -1):
     print(" " * (n - i) + "*" * (2 * i - 1))
 
-# ── 7. RECTANGLE ──────────────────────────────────────────
+# â”€â”€ 7. RECTANGLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # * * * * *
 # * * * * *
 # * * * * *
@@ -87,7 +89,7 @@ rows, cols = 3, 5
 for i in range(rows):
     print("* " * cols)
 
-# ── 8. HOLLOW RECTANGLE ───────────────────────────────────
+# â”€â”€ 8. HOLLOW RECTANGLE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # * * * * *
 # *       *
 # * * * * *
@@ -101,8 +103,9 @@ for i in range(rows):
     print()
 
 # KEY POINTS:
-#   → Outer loop = rows, inner loop = columns (always)
-#   → print(end="") prevents automatic newline
-#   → print() with no args prints a blank line (moves to next row)
-#   → Spaces before stars create the centered/pyramid effect
-#   → String repetition: "*" * 3 = "***", " " * 2 = "  "
+#   â†’ Outer loop = rows, inner loop = columns (always)
+#   â†’ print(end="") prevents automatic newline
+#   â†’ print() with no args prints a blank line (moves to next row)
+#   â†’ Spaces before stars create the centered/pyramid effect
+#   â†’ String repetition: "*" * 3 = "***", " " * 2 = "  "
+

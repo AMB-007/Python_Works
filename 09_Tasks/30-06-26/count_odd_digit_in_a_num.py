@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count odd digit in a num.
+
 #. Count the odd digits in a number.Sample Input: N = 98765432
 n = 98765432
 count = 0

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for duplicates.
+
 # Remove Duplicate Strings (Ignore Case)
 # Sample Input: ['Python','java','PYTHON','Java','C','c']
 

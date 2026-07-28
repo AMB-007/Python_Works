@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for sum even.
+
 n = int(input())
 sum = 0
 for i in range ( 1, n + 1):

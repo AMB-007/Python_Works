@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for parkinf fee.
+
 hours = float(input("Enter the Hours :"))
 
 if hours == 0:
@@ -14,4 +16,5 @@ elif hours >= 6 and hours <= 10:
 
 else:
     print(f"Invalid Hours")
+
 

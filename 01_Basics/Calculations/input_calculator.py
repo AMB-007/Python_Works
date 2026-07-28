@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to take two numbers as input and calculate their sum.
+
 number_1 = int(input("Enter the first number:"))
 number_2 = int(input("Enter the second number:"))
 sum = number_1 + number_2
@@ -14,4 +16,5 @@ exponentiation = number_1 ** number_2
 print(exponentiation)
 modulus = number_1 % number_2
 print(modulus)
+
 

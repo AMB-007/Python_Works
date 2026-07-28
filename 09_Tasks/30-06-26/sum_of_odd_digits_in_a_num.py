@@ -1,4 +1,4 @@
-# Find the sum of odd digits in a number.Sample Input: N = 864521
+﻿# Question: Find the sum of odd digits in a number.Sample Input: N = 864521
 
 n = 864521
 sum = 0

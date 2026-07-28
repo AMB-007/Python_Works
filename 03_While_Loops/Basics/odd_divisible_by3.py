@@ -1,4 +1,4 @@
-# wap to get the numbers should be odd and divisible by 3
+﻿# Question: wap to get the numbers should be odd and divisible by 3
 # from 1 to n
 
 n = int(input("Enter the number:"))

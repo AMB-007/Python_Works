@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to validate if a student's mark falls within valid range (0 to 100).
+
 mark = int(input("Enter the mark :"))
 
 if mark >= 0 and mark <= 100:
@@ -15,3 +17,4 @@ if mark >= 0 and mark <= 100:
 
 else:
     print(f"GETOUT")
+

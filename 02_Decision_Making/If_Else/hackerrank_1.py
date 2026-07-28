@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to check whether a number is odd or even.
+
 n = int(input("Enter a number :"))
 
 if n %2 == 0 :   
@@ -12,3 +14,4 @@ if n %2 == 0 :
         print("GetOut")  
 else:
     print("Weird")
+

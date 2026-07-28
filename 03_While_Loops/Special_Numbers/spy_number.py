@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for spy number.
+
 n = int(input("Enter N :"))
 sum = 0
 product = 1

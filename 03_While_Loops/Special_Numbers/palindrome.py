@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for palindrome.
+
 num = int(input("Enter N :"))
 
 temp = num

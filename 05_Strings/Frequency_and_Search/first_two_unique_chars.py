@@ -1,4 +1,4 @@
-﻿# Find the first two unique (non-repeating) characters in a string
+﻿# Question: Find the first two unique (non-repeating) characters in a string
 
 text = "programming"
 count = 0
@@ -9,3 +9,4 @@ for ch in text:
         count += 1
     if count == 2:
         break
+

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for strong num.
+
 
 
 n = 145

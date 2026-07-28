@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for Online Exam.
+
 mark = int(input("Enter the mark :"))
 
 if mark == 100:

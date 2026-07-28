@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for product of odd digits.
+
 n = int(input("Enter the number :"))
 
 product = 1

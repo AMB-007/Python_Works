@@ -1,4 +1,6 @@
-﻿# Safe file reading using try-except for FileNotFoundError handling
+﻿# Question: Write a Python program for file read exception.
+
+# Safe file reading using try-except for FileNotFoundError handling
 
 filename = input("Enter file name to read: ")
 
@@ -11,3 +13,4 @@ except FileNotFoundError:
     print(f"Error: The file '{filename}' does not exist.")
 
 print("File reading operation complete.")
+

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for map intro.
+
 #list
 """
 Applies a function to every line.

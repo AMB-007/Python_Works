@@ -1,4 +1,4 @@
-#wap to get the product of odd numbers from 1 to 10
+﻿# Question: wap to get the product of odd numbers from 1 to 10
 
 
 i = 1

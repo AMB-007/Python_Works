@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for mobile data usage.
+
 data = int(input("Enter the data :"))
 
 if data == 0:

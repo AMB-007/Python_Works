@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for prime from 1000to100.
+
 
 
 
@@ -8,4 +10,5 @@ for i in range(1000,100,-1):
     else:
 
         print(i)
+
 

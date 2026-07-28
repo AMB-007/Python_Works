@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for sturdent grade.
+
 def result(mark):
     if mark >= 90:
         print("A Grade")

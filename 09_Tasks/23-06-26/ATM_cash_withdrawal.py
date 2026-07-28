@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for ATM cash withdrawal.
+
 balance = float(input("Enter the balance :"))
 withdraw = float(input("Enter the withdrawal balance :"))
 

@@ -1,4 +1,4 @@
-# find the largest element with maximum frequency
+﻿# Question: find the largest element with maximum frequency
 
 
 numbers = [2, 4, 2, 5, 6, 2, 4]
@@ -10,3 +10,4 @@ for i in numbers:
         max_frequency = frequency
         element = i
 print(element,max_frequency)
+

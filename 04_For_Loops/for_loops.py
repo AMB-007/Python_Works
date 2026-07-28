@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for for loops.
+
 # ============================================================
 #  TOPIC: For Loops
 # ============================================================
@@ -11,10 +13,10 @@
 #   for variable in sequence:
 #       # body
 
-# ── RANGE FUNCTION ────────────────────────────────────────
-# range(stop)           → 0 to stop-1
-# range(start, stop)    → start to stop-1
-# range(start, stop, step) → start to stop-1, jumping by step
+# â”€â”€ RANGE FUNCTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# range(stop)           â†’ 0 to stop-1
+# range(start, stop)    â†’ start to stop-1
+# range(start, stop, step) â†’ start to stop-1, jumping by step
 
 for i in range(5):          # 0 1 2 3 4
     print(i, end=" ")
@@ -28,7 +30,7 @@ for i in range(1, 11, 2):   # 1 3 5 7 9  (odd numbers)
 for i in range(10, 0, -1):  # 10 9 8 7... 1  (countdown)
     print(i, end=" ")
 
-# ── ITERATING OVER SEQUENCES ──────────────────────────────
+# â”€â”€ ITERATING OVER SEQUENCES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Over a list:
 fruits = ["apple", "banana", "cherry"]
@@ -44,7 +46,7 @@ s = "hello"
 for i in range(len(s)):
     print(i, s[i])  # 0 h, 1 e, ...
 
-# ── NUMBER PROBLEMS ───────────────────────────────────────
+# â”€â”€ NUMBER PROBLEMS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Sum of 1 to n:
 n = 10
@@ -69,14 +71,14 @@ for i in range(1, 21):
     else:
         print(i)
 
-# Factorial (n! = 1 × 2 × ... × n):
+# Factorial (n! = 1 Ã— 2 Ã— ... Ã— n):
 n = 5
 fact = 1
 for i in range(1, n + 1):
     fact *= i
 print("Factorial:", fact)   # 120
 
-# ── SPECIAL NUMBERS ───────────────────────────────────────
+# â”€â”€ SPECIAL NUMBERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Armstrong number: sum of digits^n == number
 n = 153
@@ -94,15 +96,15 @@ n = 29
 is_prime = all(n % i != 0 for i in range(2, int(n**0.5) + 1))
 print("Prime:", is_prime)          # True
 
-# ── break / continue / else ───────────────────────────────
+# â”€â”€ break / continue / else â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 for i in range(1, 6):
     if i == 3:
-        break           # stops at 3 → prints 1 2
+        break           # stops at 3 â†’ prints 1 2
     print(i)
 
 for i in range(1, 6):
     if i == 3:
-        continue        # skips 3 → prints 1 2 4 5
+        continue        # skips 3 â†’ prints 1 2 4 5
     print(i)
 
 # else with for: runs if loop completed WITHOUT break
@@ -114,7 +116,8 @@ else:
     print("Prime")
 
 # KEY POINTS:
-#   → range() generates numbers but doesn't store them (memory efficient)
-#   → Use enumerate(lst) to get index + value together
-#   → Use zip(a, b) to loop over two lists simultaneously
-#   → for..else is unique to Python — else runs only if no break occurred
+#   â†’ range() generates numbers but doesn't store them (memory efficient)
+#   â†’ Use enumerate(lst) to get index + value together
+#   â†’ Use zip(a, b) to loop over two lists simultaneously
+#   â†’ for..else is unique to Python â€” else runs only if no break occurred
+

@@ -1,4 +1,4 @@
-# wap to get the total number of digits in a number.
+﻿# Question: wap to get the total number of digits in a number.
 
 n = int(input("Enter the number :"))
 if n == 0:
@@ -10,6 +10,7 @@ else:
         count += 1
         n = n // 10
     print(count)
+
 
 
 

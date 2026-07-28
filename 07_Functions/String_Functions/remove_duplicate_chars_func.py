@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for remove duplicate chars func.
+
 def recursive(text):
     new = ""
     for i in text:

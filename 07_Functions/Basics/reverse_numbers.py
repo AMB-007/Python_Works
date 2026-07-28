@@ -1,3 +1,5 @@
+﻿# Question: Write a Python function to reverse a given integer number using while loop.
+
 
 def reverse_number(num_1):
     rev = 0

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for three list.
+
 # Split a Mixed List into Three Lists (Use type())
 # Use type() to separate integers, strings, and special-character strings.
 # Sample Input: [10,'python','@',20,'#','AI','$',15]

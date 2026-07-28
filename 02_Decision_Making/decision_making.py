@@ -1,12 +1,14 @@
+﻿# Question: Write a Python program for decision making.
+
 # ============================================================
-#  TOPIC: Decision Making — if / elif / else
+#  TOPIC: Decision Making â€” if / elif / else
 # ============================================================
 
 # DEFINITION:
 #   Decision making lets the program choose which block of
 #   code to run based on whether a condition is True or False.
 
-# ── IF / ELIF / ELSE ─────────────────────────────────────
+# â”€â”€ IF / ELIF / ELSE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # SYNTAX:
 #   if condition:
 #       # runs when condition is True
@@ -15,14 +17,14 @@
 #   else:
 #       # runs when ALL above conditions are False
 
-# EXAMPLE 1 – Simple if/else:
+# EXAMPLE 1 â€“ Simple if/else:
 age = int(input("Enter age: "))
 if age >= 18:
     print("You are an adult.")
 else:
     print("You are a minor.")
 
-# EXAMPLE 2 – if / elif / else (multiple conditions):
+# EXAMPLE 2 â€“ if / elif / else (multiple conditions):
 marks = int(input("Enter marks: "))
 if marks >= 90:
     print("Grade: A")
@@ -35,7 +37,7 @@ elif marks >= 40:
 else:
     print("Grade: F")
 
-# ── NESTED IF ─────────────────────────────────────────────
+# â”€â”€ NESTED IF â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # DEFINITION: An if statement inside another if statement.
 # Used when a condition depends on another condition.
 
@@ -48,7 +50,7 @@ if num > 0:
 else:
     print("Negative or Zero")
 
-# ── TERNARY OPERATOR ──────────────────────────────────────
+# â”€â”€ TERNARY OPERATOR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # DEFINITION: A single-line shorthand for simple if/else.
 # SYNTAX:  value_if_true  if  condition  else  value_if_false
 
@@ -63,10 +65,10 @@ print("Greater:", greater)         # 9
 
 status = "Adult" if age >= 18 else "Minor"
 
-# ── LOGICAL OPERATORS IN CONDITIONS ──────────────────────
-#   and → both must be True
-#   or  → at least one must be True
-#   not → flips True to False
+# â”€â”€ LOGICAL OPERATORS IN CONDITIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+#   and â†’ both must be True
+#   or  â†’ at least one must be True
+#   not â†’ flips True to False
 
 salary = 50000
 experience = 3
@@ -82,7 +84,8 @@ if not is_banned:
     print("User is active")
 
 # KEY POINTS:
-#   → Indentation (4 spaces) defines the block — it is MANDATORY
-#   → elif is "else if" — checked only if previous conditions failed
-#   → else is optional, catches everything not matched above
-#   → Ternary is great for simple assignments, avoid nesting it
+#   â†’ Indentation (4 spaces) defines the block â€” it is MANDATORY
+#   â†’ elif is "else if" â€” checked only if previous conditions failed
+#   â†’ else is optional, catches everything not matched above
+#   â†’ Ternary is great for simple assignments, avoid nesting it
+

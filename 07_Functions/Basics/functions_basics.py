@@ -1,5 +1,7 @@
+﻿# Question: Write a Python program for functions basics.
+
 # ============================================================
-#  TOPIC: Functions — Basics
+#  TOPIC: Functions â€” Basics
 # ============================================================
 
 # DEFINITION:
@@ -7,20 +9,20 @@
 #   specific task. Define it once, call it multiple times.
 #   Functions help avoid repetition and make code organized.
 
-# ── DEFINING A FUNCTION ───────────────────────────────────
+# â”€â”€ DEFINING A FUNCTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # SYNTAX:
 #   def function_name(parameters):
 #       """docstring (optional description)"""
 #       # body
-#       return value   ← optional
+#       return value   â† optional
 
 # Simple function with no parameters:
 def greet():
     print("Hello!")
 
-greet()     # calling the function → Hello!
+greet()     # calling the function â†’ Hello!
 
-# ── PARAMETERS & ARGUMENTS ───────────────────────────────
+# â”€â”€ PARAMETERS & ARGUMENTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Parameters: variables listed in the function definition
 # Arguments:  actual values passed when calling the function
 
@@ -30,7 +32,7 @@ def add(a, b):          # a, b are parameters
 result = add(5, 3)      # 5, 3 are arguments
 print(result)           # 8
 
-# ── RETURN STATEMENT ──────────────────────────────────────
+# â”€â”€ RETURN STATEMENT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # return sends a value back to the caller.
 # A function without return gives None.
 
@@ -46,7 +48,7 @@ def min_max(lst):
 lo, hi = min_max([3, 1, 9, 2])
 print(lo, hi)           # 1 9
 
-# ── DEFAULT ARGUMENTS ──────────────────────────────────────
+# â”€â”€ DEFAULT ARGUMENTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # A default value is used if no argument is provided.
 
 def greet(name, msg="Hello"):
@@ -55,7 +57,7 @@ def greet(name, msg="Hello"):
 greet("Arjun")              # Hello, Arjun!   (uses default)
 greet("Arjun", "Welcome")   # Welcome, Arjun! (overrides default)
 
-# ── POSITIONAL vs KEYWORD ARGUMENTS ─────────────────────
+# â”€â”€ POSITIONAL vs KEYWORD ARGUMENTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 def student(name, age, grade):
     print(f"{name}, Age: {age}, Grade: {grade}")
 
@@ -63,7 +65,7 @@ student("Arjun", 21, "A")                       # positional
 student(grade="A", name="Arjun", age=21)        # keyword (any order)
 student("Arjun", grade="A", age=21)             # mixed
 
-# ── COMMON FUNCTION EXAMPLES ──────────────────────────────
+# â”€â”€ COMMON FUNCTION EXAMPLES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Count vowels in a string:
 def count_vowels(s):
@@ -97,8 +99,9 @@ def digit_sum(n):
 print(digit_sum(1234))    # 10
 
 # KEY POINTS:
-#   → def keyword defines a function
-#   → Parameters with defaults must come AFTER non-default ones
-#   → A function can return multiple values as a tuple
-#   → Call a function by writing its name followed by ()
-#   → Functions can call other functions (composition)
+#   â†’ def keyword defines a function
+#   â†’ Parameters with defaults must come AFTER non-default ones
+#   â†’ A function can return multiple values as a tuple
+#   â†’ Call a function by writing its name followed by ()
+#   â†’ Functions can call other functions (composition)
+

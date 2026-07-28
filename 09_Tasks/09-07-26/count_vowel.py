@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count vowel.
+
 def count_vowel(text):
     vowel ="AEIOUaeiou"
     count = 0
@@ -7,3 +9,4 @@ def count_vowel(text):
             count += 1
     print(count)
 count_vowel("Education")
+

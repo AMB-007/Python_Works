@@ -1,4 +1,4 @@
-# Count the even digits in a number.Sample Input: N = 98765432
+﻿# Question: Count the even digits in a number.Sample Input: N = 98765432
 
 
 n = 98765432

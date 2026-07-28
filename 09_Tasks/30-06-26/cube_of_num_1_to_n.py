@@ -1,4 +1,4 @@
-#Print the cubes of numbers from 1 to N.Sample Input: N = 10
+﻿# Question: Print the cubes of numbers from 1 to N.Sample Input: N = 10
 
 n = int(input("Enter N :"))
 

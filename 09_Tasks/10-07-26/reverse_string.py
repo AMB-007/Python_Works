@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for reverse string.
+
 def reverse_string(text):
     rev = ""
     i = len(text) - 1

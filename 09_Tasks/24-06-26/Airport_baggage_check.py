@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for Airport baggage check.
+
 weight = int(input("Enter the weight :"))
 
 if weight == 0:

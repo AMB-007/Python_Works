@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for perfect number.
+
 def perfect_number(num):
 
     total = 0

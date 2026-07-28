@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for replace vowel.
+
 #  Replace Every Vowel with '*'
 # Sample Input: ['python','education','apple']
 

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to demonstrate string indexing, slicing, and string reversal.
+
 text = "python is a programming language"
 print(text[1:5])
 print(text[0:7])# "python "

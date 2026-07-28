@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for sum divisible by 3and5.
+
 i = 1
 sum = 0
 while( i <= 100):

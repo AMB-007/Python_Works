@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for perfect number.
+
 n = int(input("Enter N :"))
 sum = 0
 for i in range(1,n//2+1):

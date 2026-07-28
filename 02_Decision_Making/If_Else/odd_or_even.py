@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to check whether an input number is odd or even.
+
 num = int(input("Enter the number number:"))
 
 

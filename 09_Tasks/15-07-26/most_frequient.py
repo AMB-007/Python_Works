@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for most frequient.
+
 items = ['apple', 'banana', 'grapes']
 
 freq = []
@@ -11,3 +13,4 @@ for word in items:
     if largest > 1:
         freq.append(char)
 print(freq)
+

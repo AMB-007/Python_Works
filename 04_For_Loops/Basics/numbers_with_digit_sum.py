@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program using for loop to calculate sum of digits for each number up to N.
+
 
 n = int(input("Enter a number"))
 for i in range(1,n+1):
@@ -7,6 +9,7 @@ for i in range(1,n+1):
     if sum %2 == 0 and i %3 == 0 and i %5 != 0:
         print("Golden number")
         print(i)
+
 
 
 

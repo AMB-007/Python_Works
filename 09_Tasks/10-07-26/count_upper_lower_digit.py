@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count upper lower digit.
+
 def even_index(text):
     result = ""
 

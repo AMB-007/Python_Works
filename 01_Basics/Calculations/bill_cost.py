@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to calculate total bill cost from product price and quantity.
+
 price = int(input("Enter the price of product:"))
 quantity = int(input("Enter the quantity of product:"))
 

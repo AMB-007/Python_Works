@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count vowels function.
+
 def count_vowels(text):
 
     count = 0

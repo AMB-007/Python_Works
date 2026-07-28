@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for spy number.
+
 # spy number
 
 n = int(input("Enter N :"))
@@ -11,6 +13,7 @@ print(product)
 print(sum)
 
 print("Spy number" if sum == product else "not spy number")
+
 
 
 

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for factors.
+
 # waap to get factors of n(enter by user)
 
 n = int(input("Enter the number:"))
@@ -6,3 +8,4 @@ while ( i <= n ):
     if( n % i ==0):
         print(i)
     i = i + 1
+

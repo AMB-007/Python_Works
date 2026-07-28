@@ -1,4 +1,6 @@
-﻿# Swapcase string manually using isupper() and islower()
+﻿# Question: Write a Python program for manual swapcase.
+
+# Swapcase string manually using isupper() and islower()
 
 text = "PyThon"
 new_text = ""
@@ -11,3 +13,4 @@ for ch in text:
 
 print("Original:", text)
 print("Swapped:", new_text)
+

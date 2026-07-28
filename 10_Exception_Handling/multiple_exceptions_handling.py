@@ -1,4 +1,6 @@
-﻿# Handling multiple exceptions (ZeroDivisionError and ValueError)
+﻿# Question: Write a Python program for multiple exceptions handling.
+
+# Handling multiple exceptions (ZeroDivisionError and ValueError)
 
 try:
     num_1 = int(input("Enter a number: "))
@@ -9,3 +11,4 @@ except ValueError:
     print("Error: Please enter a valid integer.")
 
 print("Program execution finished.")
+

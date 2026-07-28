@@ -1,5 +1,7 @@
+﻿# Question: Write a Python program for list operations.
+
 # ============================================================
-#  TOPIC: Collections — List Operations
+#  TOPIC: Collections â€” List Operations
 # ============================================================
 
 # DEFINITION:
@@ -12,36 +14,36 @@ nums = [1, 2, 3, 4, 5]
 mixed = [1, "hello", 3.14, True]
 empty = []
 
-# ── INDEXING & SLICING ────────────────────────────────────
+# â”€â”€ INDEXING & SLICING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 lst = [10, 20, 30, 40, 50]
 print(lst[0])      # 10   (first)
 print(lst[-1])     # 50   (last)
 print(lst[1:4])    # [20, 30, 40]
 print(lst[::-1])   # [50, 40, 30, 20, 10]  (reversed)
 
-# ── BUILT-IN LIST METHODS ─────────────────────────────────
+# â”€â”€ BUILT-IN LIST METHODS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 lst = [3, 1, 4, 1, 5]
 
-lst.append(9)       # [3,1,4,1,5,9]     → add to END
-lst.insert(2, 99)   # [3,1,99,4,1,5,9]  → insert at index 2
+lst.append(9)       # [3,1,4,1,5,9]     â†’ add to END
+lst.insert(2, 99)   # [3,1,99,4,1,5,9]  â†’ insert at index 2
 lst.remove(1)       # removes FIRST occurrence of 1
 lst.pop()           # removes and returns LAST item
 lst.pop(0)          # removes and returns item at index 0
 lst.sort()          # sorts in place (ascending)
 lst.sort(reverse=True)  # sorts descending
 lst.reverse()       # reverses in place
-lst.clear()         # empties the list → []
+lst.clear()         # empties the list â†’ []
 lst_copy = lst.copy()   # shallow copy
 
 lst = [3, 1, 4, 1, 5]
-print(lst.count(1))     # 2   → count occurrences of 1
-print(lst.index(4))     # 2   → index of first occurrence of 4
-print(len(lst))         # 5   → number of items
-print(sum(lst))         # 14  → sum of all items
-print(max(lst))         # 5   → maximum value
-print(min(lst))         # 1   → minimum value
+print(lst.count(1))     # 2   â†’ count occurrences of 1
+print(lst.index(4))     # 2   â†’ index of first occurrence of 4
+print(len(lst))         # 5   â†’ number of items
+print(sum(lst))         # 14  â†’ sum of all items
+print(max(lst))         # 5   â†’ maximum value
+print(min(lst))         # 1   â†’ minimum value
 
-# ── COMMON OPERATIONS ─────────────────────────────────────
+# â”€â”€ COMMON OPERATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Create list of 1 to n:
 n = 5
@@ -87,13 +89,14 @@ largest = lst[0]
 for x in lst:
     if x > largest: largest = x  # manual max
 
-# ── sorted() vs .sort() ───────────────────────────────────
+# â”€â”€ sorted() vs .sort() â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 lst = [3, 1, 4, 1, 5]
 new = sorted(lst)       # returns NEW sorted list, original unchanged
 lst.sort()              # modifies ORIGINAL list in place
 
 # KEY POINTS:
-#   → Lists are mutable — you CAN change elements after creation
-#   → list[index] = new_value  → directly reassign
-#   → Use sorted() when you need to keep the original unchanged
-#   → set(list) removes duplicates but loses order
+#   â†’ Lists are mutable â€” you CAN change elements after creation
+#   â†’ list[index] = new_value  â†’ directly reassign
+#   â†’ Use sorted() when you need to keep the original unchanged
+#   â†’ set(list) removes duplicates but loses order
+

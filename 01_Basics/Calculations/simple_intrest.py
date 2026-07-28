@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to calculate simple interest from principal amount, rate, and tenure.
+
 principle = float(input("Enter the Principle Amount:"))
 rate_intrest = float(input("Enter the Intrest:"))
 tendure = int(input("Duration in months:"))

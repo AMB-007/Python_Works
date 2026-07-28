@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count digits divisible by 3.
+
 n = int(input("Enter the number: "))
 
 count = 0

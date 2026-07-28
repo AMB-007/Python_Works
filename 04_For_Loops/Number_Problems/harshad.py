@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for harshad.
+
 
 num = 18
 sum = 0
@@ -10,3 +12,4 @@ print("harshad" if num % sum == 0 else "not harshad")
 # sum +=int(i) sum = 0+1
 #convert i into int so that we can add each digit in each loop
 #to get the sum of digits
+

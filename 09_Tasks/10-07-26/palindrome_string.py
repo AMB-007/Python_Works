@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for palindrome string.
+
 def palindrome(text):
     rev = ""
 

@@ -1,4 +1,4 @@
-# Find the sum of all factors of a given number.Sample Input: N = 36
+﻿# Question: Find the sum of all factors of a given number.Sample Input: N = 36
 n = int(input("Enter N :"))
 
 sum = 0

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to calculate the average marks of 5 subjects.
+
 sub_1 = int(input("Enter the mark of 1st subject:"))
 sub_2 = int(input("Enter the mark of 2nd subject:"))
 sub_3 = int(input("Enter the mark of 3rd subject:"))

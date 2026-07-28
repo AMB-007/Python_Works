@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to find the nearest prime number greater than a given number N.
+
 # Nearest Prime Number
 
 # Task:
@@ -13,6 +15,7 @@ for i in range(n+1,100):
     if count == 2:
         print(i) 
         break   
+
 
 
 

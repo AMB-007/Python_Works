@@ -1,4 +1,6 @@
-﻿# Extract model name and price from a nested dictionary of mobiles
+﻿# Question: Write a Python program for nested dict operations.
+
+# Extract model name and price from a nested dictionary of mobiles
 
 mobiles = {
     "Apple": {"model": "iPhone 13", "price": 120000, "color": "black"},
@@ -13,3 +15,4 @@ for brand, details in mobiles.items():
     result[brand] = [model, price]
 
 print("Mobile Model and Price:", result)
+

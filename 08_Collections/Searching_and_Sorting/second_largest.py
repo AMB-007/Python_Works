@@ -1,4 +1,4 @@
-# wap to get the second largest number forn the list
+﻿# Question: wap to get the second largest number forn the list
 
 numbers = [4, 11, 5]
 
@@ -17,3 +17,4 @@ for i in numbers:
         second_largest = i
 
 print(largest,second_largest)
+

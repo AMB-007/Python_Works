@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for star patterns.
+
 # to print in one line
 """
 for i in range(1,6):
@@ -101,3 +103,4 @@ for i in range(1,6):
 1 2 3 4 5 
 
 """
+

@@ -1,4 +1,4 @@
-# check and print the armstrong numbers in a range from 1 to 1000
+﻿# Question: check and print the armstrong numbers in a range from 1 to 1000
 
 
 
@@ -20,6 +20,7 @@ for i in range(1,n):
     
 
     
+
 
 
 

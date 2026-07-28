@@ -1,4 +1,4 @@
-# wap to get the count of number divisible by 3 from 1 to 100
+﻿# Question: wap to get the count of number divisible by 3 from 1 to 100
 
 i = 1
 count = 0

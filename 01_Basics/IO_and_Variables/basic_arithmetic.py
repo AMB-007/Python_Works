@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to perform basic arithmetic operations (addition, subtraction).
+
 number_1 = 30
 number_2 = 10
 sum = number_1 + number_2
@@ -20,5 +22,6 @@ print(exponentiation)
 
 modulus = number_1 % number_2
 print(modulus)
+
 
 

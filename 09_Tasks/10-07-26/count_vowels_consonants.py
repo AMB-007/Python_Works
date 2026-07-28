@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count vowels consonants.
+
 def count_vowels_consonants(text):
     vowels = 0
     consonants = 0
@@ -18,3 +20,4 @@ v, c = count_vowels_consonants(text)
 
 print("Vowels =", v)
 print("Consonants =", c)
+

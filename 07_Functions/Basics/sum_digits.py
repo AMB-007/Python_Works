@@ -1,4 +1,4 @@
-# define a function to return the sum of digits of the number
+﻿# Question: define a function to return the sum of digits of the number
 
 
 

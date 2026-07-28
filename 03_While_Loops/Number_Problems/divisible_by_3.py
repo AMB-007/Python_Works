@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for divisible by 3.
+
 n = int(input("Enter a number :"))
 
 i = 1

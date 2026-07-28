@@ -1,4 +1,4 @@
-# write a pyton prgm that takesd a list of integers and performs the following steps:
+﻿# Question: write a pyton prgm that takesd a list of integers and performs the following steps:
 # rotate the last to right by 2 positions.
 # (the last two elements move to front)
 # then replace every even number with its half, and every odd number with its double.

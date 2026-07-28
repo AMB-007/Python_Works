@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count multiple of 4.
+
 n = int(input("Enter the number :"))
 i = 1
 count = 0

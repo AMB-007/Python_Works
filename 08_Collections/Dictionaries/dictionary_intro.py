@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for dictionary intro.
+
 # eleemnts in a dictionary should be in {key:value} pair
 
 # duplicates keys are not allowed in dictionary

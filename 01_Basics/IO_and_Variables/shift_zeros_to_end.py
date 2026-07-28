@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to shift all zeros in a list to the end while maintaining order.
+
 # Shift all zeros to the end
 
 numbers = [0,0,5,0,3,8,0,2]

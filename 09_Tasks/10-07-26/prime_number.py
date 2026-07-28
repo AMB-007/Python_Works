@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for prime number.
+
 def prime(n):
 
     if n <= 1:

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for login verification.
+
 def login(username, password):
     if username == "admin" and password == "1234":
         print("Login Successful")

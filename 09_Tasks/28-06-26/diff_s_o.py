@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for diff s o.
+
 n = int(input("Enter the number :"))
 sum_even = 0
 sum_odd = 0

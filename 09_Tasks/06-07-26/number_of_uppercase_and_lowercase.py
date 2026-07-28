@@ -1,4 +1,4 @@
-#  Count the number of uppercase and lowercase letters in a string.Sample Input: PyTHon123
+﻿# Question: Count the number of uppercase and lowercase letters in a string.Sample Input: PyTHon123
 
 text = "PyTHon123"
 
@@ -13,6 +13,7 @@ for i in text:
 
 print(lower_count)
 print(upper_count)
+
 
 
 

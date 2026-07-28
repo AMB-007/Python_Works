@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for seperate even odd.
+
 # Separate Even and Odd Digit Sum
 # For each number calculate even digit sum and odd digit sum.
 # Sample Input: [1234,5678,2468]

@@ -1,4 +1,4 @@
-#count uppercase,lowercase,digits and specialcharacters
+﻿# Question: count uppercase,lowercase,digits and specialcharacters
 # text = "programMING@123"
 
 

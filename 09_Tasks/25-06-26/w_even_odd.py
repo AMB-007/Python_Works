@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for w even odd.
+
 n = int(input("Enter the number :"))
 i = 1
 even_sum = 0
@@ -12,6 +14,7 @@ difference = even_sum - even_odd
 print(difference)
 print(even_sum)
 print(even_odd)
+
 
 
 

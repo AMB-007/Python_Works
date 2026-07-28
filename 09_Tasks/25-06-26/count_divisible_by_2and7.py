@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for count divisible by 2and7.
+
 n = int(input("Enter the number :"))
 
 i = 1

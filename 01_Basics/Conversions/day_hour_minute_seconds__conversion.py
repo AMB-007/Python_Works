@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to convert days into hours, minutes, and seconds.
+
 number_days = int(input("Enter the number of Days:"))
 number_hours = number_days * 24
 number_minutes = number_hours * 60

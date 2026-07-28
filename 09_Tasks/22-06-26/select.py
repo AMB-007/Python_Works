@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for select.
+
 print(f"Select a choice(1,2,3)")
 choice = (input("Enter a choice :"))
 
@@ -9,6 +11,7 @@ elif choice == "3":
     print(f"Correct")
 else:
     print("Choice is inncorrect")
+
 
 
 

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to check whether a number is positive, negative, or zero using ternary operator.
+
 num = int(input("Enter a number"))
 
 

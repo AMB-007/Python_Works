@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to simulate ATM withdrawal verifying minimum balance requirement.
+
 balance = 10000
 min_balance = 1000
 
@@ -26,3 +28,4 @@ elif choice == "4":
     print(f"THANK YOU FOR USING THE ATM")
 else:
     print(f"Invalid Choice Please choose Correct Option")
+

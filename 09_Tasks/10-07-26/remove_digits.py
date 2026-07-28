@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for remove digits.
+
 def remove_digits(text):
     result = ""
 

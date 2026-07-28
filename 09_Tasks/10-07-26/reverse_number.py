@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for reverse number.
+
 def reverse_number(num):
 
     rev = 0

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for while loops.
+
 # ============================================================
 #  TOPIC: While Loops
 # ============================================================
@@ -10,15 +12,15 @@
 
 # SYNTAX:
 #   while condition:
-#       # body — runs repeatedly until condition is False
+#       # body â€” runs repeatedly until condition is False
 
-# ── BASIC WHILE LOOP ──────────────────────────────────────
+# â”€â”€ BASIC WHILE LOOP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 i = 1
 while i <= 5:
     print(i)        # prints 1 2 3 4 5
     i += 1          # IMPORTANT: update variable to avoid infinite loop
 
-# ── break — exit the loop early ───────────────────────────
+# â”€â”€ break â€” exit the loop early â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Stops the loop immediately, even if condition is still True.
 i = 1
 while i <= 10:
@@ -28,7 +30,7 @@ while i <= 10:
     i += 1
 # Output: 1 2 3 4
 
-# ── continue — skip current iteration ────────────────────
+# â”€â”€ continue â€” skip current iteration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Skips the rest of the body and goes back to check condition.
 i = 0
 while i < 10:
@@ -38,9 +40,9 @@ while i < 10:
     print(i)
 # Output: 1 3 5 7 9
 
-# ── NUMBER PROBLEMS with while ────────────────────────────
+# â”€â”€ NUMBER PROBLEMS with while â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-# Sum of digits: 1234 → 1+2+3+4 = 10
+# Sum of digits: 1234 â†’ 1+2+3+4 = 10
 n = 1234
 total = 0
 while n > 0:
@@ -48,7 +50,7 @@ while n > 0:
     n //= 10            # remove last digit
 print("Sum of digits:", total)   # 10
 
-# Reverse a number: 1234 → 4321
+# Reverse a number: 1234 â†’ 4321
 n = 1234
 rev = 0
 while n > 0:
@@ -64,7 +66,7 @@ while n > 0:
     n //= 10
 print("Digits:", count)          # 5
 
-# ── SPECIAL NUMBERS ───────────────────────────────────────
+# â”€â”€ SPECIAL NUMBERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Palindrome check (number): same forwards and backwards
 n = original = 121
@@ -82,7 +84,7 @@ total = 0
 while n > 0:
     total += (n % 10) ** digits
     n //= 10
-print("Armstrong:", original == total)  # True (1³+5³+3³ = 153)
+print("Armstrong:", original == total)  # True (1Â³+5Â³+3Â³ = 153)
 
 # Prime number check
 n = 17
@@ -96,7 +98,8 @@ while i <= n // 2:
 print("Prime:", is_prime)    # True
 
 # KEY POINTS:
-#   → Always update the loop variable inside the body (avoid infinite loops)
-#   → Use break to exit early, continue to skip an iteration
-#   → while is preferred over for when count of iterations is unknown
-#   → n % 10 → last digit,  n // 10 → removes last digit
+#   â†’ Always update the loop variable inside the body (avoid infinite loops)
+#   â†’ Use break to exit early, continue to skip an iteration
+#   â†’ while is preferred over for when count of iterations is unknown
+#   â†’ n % 10 â†’ last digit,  n // 10 â†’ removes last digit
+

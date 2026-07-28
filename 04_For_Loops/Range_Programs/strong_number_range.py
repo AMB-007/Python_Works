@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for strong number range.
+
 
 for i in range(1,1000):
     sum = 0

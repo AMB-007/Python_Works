@@ -1,4 +1,4 @@
-#Print only numeric characters from a string.Sample Input: Ab12Cd345
+﻿# Question: Print only numeric characters from a string.Sample Input: Ab12Cd345
 
 text = "Ab12Cd345"
 

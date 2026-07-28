@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for calculations.
+
 # ============================================================
 #  TOPIC: Calculations in Python
 # ============================================================
@@ -7,13 +9,13 @@
 #   mathematical operations on numbers (integers & floats).
 
 # OPERATORS:
-#   +   → Addition          : 5 + 3  = 8
-#   -   → Subtraction       : 5 - 3  = 2
-#   *   → Multiplication    : 5 * 3  = 15
-#   /   → Division (float)  : 5 / 2  = 2.5
-#   //  → Floor Division    : 5 // 2 = 2
-#   %   → Modulus (remainder): 5 % 2 = 1
-#   **  → Exponentiation    : 2 ** 3 = 8
+#   +   â†’ Addition          : 5 + 3  = 8
+#   -   â†’ Subtraction       : 5 - 3  = 2
+#   *   â†’ Multiplication    : 5 * 3  = 15
+#   /   â†’ Division (float)  : 5 / 2  = 2.5
+#   //  â†’ Floor Division    : 5 // 2 = 2
+#   %   â†’ Modulus (remainder): 5 % 2 = 1
+#   **  â†’ Exponentiation    : 2 ** 3 = 8
 
 # SYNTAX:
 #   result = operand1  operator  operand2
@@ -45,6 +47,7 @@ bmi = weight / (height ** 2)
 print("BMI:", round(bmi, 2))           # 22.86
 
 # KEY POINTS:
-#   → Always convert input to int() or float() before calculations
-#   → Use round(value, 2) to limit decimal places
-#   → // gives integer result, / always gives float
+#   â†’ Always convert input to int() or float() before calculations
+#   â†’ Use round(value, 2) to limit decimal places
+#   â†’ // gives integer result, / always gives float
+

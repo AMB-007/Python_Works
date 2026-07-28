@@ -1,2 +1,3 @@
-# Count how many times each vowel appears.Sample Input: Education
+﻿# Question: Count how many times each vowel appears.Sample Input: Education
+
 

@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for compress string.
+
 #  Compress a string (Example: aaabbc -> a3b2c1).Sample Input: aaabbcccc
 
 

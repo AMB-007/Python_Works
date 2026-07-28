@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to check whether a number is divisible by 5 and 3 using if conditions.
+
 num = int(input("Enter the number:"))
 
 if num %5 == 0:

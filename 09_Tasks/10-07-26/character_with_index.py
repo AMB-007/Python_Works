@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for character with index.
+
 def character_index(text):
     result = []
 

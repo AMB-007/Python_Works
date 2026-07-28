@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program to check scholarship eligibility based on marks and annual family income.
+
 mark = int(input("Enter the mark :"))
 income = int(input ("Enter  the income :"))
 
@@ -13,3 +15,4 @@ elif mark >= 60 and mark <= 79:
         print(f"No scolarship")
 else:
     print(f"No scolarship")
+

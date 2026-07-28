@@ -1,4 +1,4 @@
-#define a function to get the total number of vowels in thre string enter by user
+﻿# Question: define a function to get the total number of vowels in thre string enter by user
 
 def vowel(ch):
     count = 0

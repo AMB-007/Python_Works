@@ -1,5 +1,7 @@
+﻿# Question: Write a Python program for searching and sorting.
+
 # ============================================================
-#  TOPIC: Collections — Searching & Sorting
+#  TOPIC: Collections â€” Searching & Sorting
 # ============================================================
 
 # DEFINITION:
@@ -7,7 +9,7 @@
 #   Sorting means arranging elements in a specific order.
 #   These are fundamental data manipulation skills.
 
-# ── FINDING LARGEST / SMALLEST ────────────────────────────
+# â”€â”€ FINDING LARGEST / SMALLEST â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 lst = [5, 3, 8, 1, 9, 2]
 
@@ -15,7 +17,7 @@ lst = [5, 3, 8, 1, 9, 2]
 print(max(lst))    # 9
 print(min(lst))    # 1
 
-# Without max()/min() — manual approach:
+# Without max()/min() â€” manual approach:
 largest = lst[0]
 for x in lst:
     if x > largest:
@@ -28,7 +30,7 @@ for x in lst:
         smallest = x
 print("Smallest:", smallest)  # 1
 
-# ── SECOND LARGEST ────────────────────────────────────────
+# â”€â”€ SECOND LARGEST â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Remove the max, then find max of the rest.
 
 lst = [5, 3, 8, 1, 9, 2]
@@ -48,7 +50,7 @@ for x in lst:
         second = x
 print("Second largest:", second)        # 8
 
-# ── MISSING NUMBER ────────────────────────────────────────
+# â”€â”€ MISSING NUMBER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Find the one missing number from a list of 1 to n.
 # Formula: sum(1..n) = n*(n+1)/2
 
@@ -58,7 +60,7 @@ expected = n * (n + 1) // 2
 actual = sum(lst)
 print("Missing:", expected - actual)    # 3
 
-# ── LARGEST WORD IN A SENTENCE ────────────────────────────
+# â”€â”€ LARGEST WORD IN A SENTENCE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 sentence = "I love Python programming"
 words = sentence.split()
 
@@ -71,16 +73,16 @@ for word in words:
     if len(word) > len(longest):
         longest = word
 
-# ── SORTING ───────────────────────────────────────────────
+# â”€â”€ SORTING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 lst = [5, 2, 8, 1, 9]
 
-# sorted() → returns NEW sorted list (original unchanged)
+# sorted() â†’ returns NEW sorted list (original unchanged)
 new_lst = sorted(lst)
 print(new_lst)    # [1, 2, 5, 8, 9]
-print(lst)        # [5, 2, 8, 1, 9]  ← unchanged
+print(lst)        # [5, 2, 8, 1, 9]  â† unchanged
 
-# .sort() → sorts IN PLACE (modifies original)
+# .sort() â†’ sorts IN PLACE (modifies original)
 lst.sort()
 print(lst)        # [1, 2, 5, 8, 9]
 
@@ -96,7 +98,7 @@ print(words)    # ['fig', 'apple', 'banana', 'cherry']
 # Sort by last character:
 words.sort(key=lambda w: w[-1])
 
-# ── LINEAR SEARCH ─────────────────────────────────────────
+# â”€â”€ LINEAR SEARCH â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Check each element one by one.
 
 def linear_search(lst, target):
@@ -109,7 +111,7 @@ lst = [4, 2, 7, 1, 9]
 print(linear_search(lst, 7))    # 2
 print(linear_search(lst, 5))    # -1
 
-# ── BINARY SEARCH (on sorted list) ────────────────────────
+# â”€â”€ BINARY SEARCH (on sorted list) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Efficient: halves the search space each time. O(log n).
 
 def binary_search(lst, target):
@@ -129,8 +131,9 @@ print(binary_search(lst, 7))    # 3
 print(binary_search(lst, 4))    # -1
 
 # KEY POINTS:
-#   → sorted() keeps original safe; .sort() modifies in place
-#   → max(lst, key=fn) lets you define WHAT to compare
-#   → Missing number trick: use the sum formula n*(n+1)//2
-#   → Binary search REQUIRES a sorted list first
-#   → Linear search: O(n) time; Binary search: O(log n) time
+#   â†’ sorted() keeps original safe; .sort() modifies in place
+#   â†’ max(lst, key=fn) lets you define WHAT to compare
+#   â†’ Missing number trick: use the sum formula n*(n+1)//2
+#   â†’ Binary search REQUIRES a sorted list first
+#   â†’ Linear search: O(n) time; Binary search: O(log n) time
+

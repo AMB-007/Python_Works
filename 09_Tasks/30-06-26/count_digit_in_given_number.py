@@ -1,4 +1,4 @@
-#  Count the digits in a number.Sample Input: N = 123456
+﻿# Question: Count the digits in a number.Sample Input: N = 123456
 
 n = 123456
 count = 0

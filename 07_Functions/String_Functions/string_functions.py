@@ -1,15 +1,17 @@
+﻿# Question: Write a Python program for string functions.
+
 # ============================================================
-#  TOPIC: Functions — String Functions
+#  TOPIC: Functions â€” String Functions
 # ============================================================
 
 # DEFINITION:
 #   String functions solve text-based problems using Python's
 #   built-in string methods and custom logic inside functions.
 
-# ── ANAGRAM ───────────────────────────────────────────────
+# â”€â”€ ANAGRAM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # DEFINITION: Two strings are anagrams if they contain the
 #             SAME characters in ANY order.
-# Example: "listen" and "silent" → both have l,i,s,t,e,n
+# Example: "listen" and "silent" â†’ both have l,i,s,t,e,n
 
 def is_anagram(s1, s2):
     return sorted(s1.lower()) == sorted(s2.lower())
@@ -23,7 +25,7 @@ from collections import Counter
 def is_anagram_v2(s1, s2):
     return Counter(s1.lower()) == Counter(s2.lower())
 
-# ── PANGRAM ───────────────────────────────────────────────
+# â”€â”€ PANGRAM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # DEFINITION: A sentence that contains EVERY letter of the
 #             alphabet at least once.
 # Example: "The quick brown fox jumps over the lazy dog"
@@ -36,7 +38,7 @@ def is_pangram(sentence):
 print(is_pangram("The quick brown fox jumps over the lazy dog"))  # True
 print(is_pangram("Hello World"))                                  # False
 
-# ── REMOVE DUPLICATE CHARACTERS ───────────────────────────
+# â”€â”€ REMOVE DUPLICATE CHARACTERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Keep only the FIRST occurrence of each character, in order.
 
 def remove_duplicates(s):
@@ -51,7 +53,7 @@ def remove_duplicates(s):
 print(remove_duplicates("banana"))      # ban
 print(remove_duplicates("programming")) # progamin
 
-# ── REVERSE STRING BEFORE 'p' ─────────────────────────────
+# â”€â”€ REVERSE STRING BEFORE 'p' â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Reverse the portion of the string that comes before 'p'.
 
 def reverse_before_p(s):
@@ -63,7 +65,7 @@ def reverse_before_p(s):
 print(reverse_before_p("abcpdef"))   # cbapdef
 print(reverse_before_p("hello"))     # olleh
 
-# ── MORE COMMON STRING FUNCTION PROBLEMS ──────────────────
+# â”€â”€ MORE COMMON STRING FUNCTION PROBLEMS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 # Count words in a sentence:
 def count_words(s):
@@ -91,8 +93,9 @@ def to_title(s):
 print(to_title("the quick brown fox"))  # The Quick Brown Fox
 
 # KEY POINTS:
-#   → Anagram: sorted() is the simplest approach
-#   → Pangram: use set() to check if all 26 letters are present
-#   → Remove duplicates: use a set to track already-seen characters
-#   → s.split() splits by whitespace by default → returns list of words
-#   → " ".join(list) → combines list of words back into a string
+#   â†’ Anagram: sorted() is the simplest approach
+#   â†’ Pangram: use set() to check if all 26 letters are present
+#   â†’ Remove duplicates: use a set to track already-seen characters
+#   â†’ s.split() splits by whitespace by default â†’ returns list of words
+#   â†’ " ".join(list) â†’ combines list of words back into a string
+

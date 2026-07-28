@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for perfect num 1000to100.
+
 
 
 for i in range(1000,1,-1):

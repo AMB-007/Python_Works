@@ -1,3 +1,5 @@
+﻿# Question: Write a Python program for armstrong.
+
 #1. Find Armstrong Numbers in a List
 # Given a list of numbers, print all Armstrong numbers.
 # Sample Input: [153,123,370,456,407,500
