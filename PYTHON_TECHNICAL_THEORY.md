@@ -1,218 +1,366 @@
-# 📘 Comprehensive Python Technical Theory & Method Reference Guide
+# 📘 Master Python Technical Reference & Theory Guide
 
-> **Welcome!** This guide maps directly to the 12 folders in this repository (`01_Basics` ➔ `12_OOPs`). Each section breaks down technical theory, concepts, methods, real-world analogies, and interview Q&As corresponding to your workspace files and folders.
-
----
-
-## 🧭 Repository Folder Mapping Overview
-
-| Section | Workspace Folder | Topics Covered |
-| :--- | :--- | :--- |
-| **Section 1** | [01_Basics](file:///d:/Python_Works/01_Basics) | Execution flow, Variables, Memory allocation, Mutability, Calculations, Operators, Conversions |
-| **Section 2** | [02_Decision_Making](file:///d:/Python_Works/02_Decision_Making) | Conditional branching, Boolean truthiness, Short-Circuit evaluation, Ternary operator |
-| **Section 3** | [03_While_Loops](file:///d:/Python_Works/03_While_Loops) & [04_For_Loops](file:///d:/Python_Works/04_For_Loops) | Iteration, `range()`, `break`/`continue`/`pass`, `loop...else`, digit extraction, series |
-| **Section 4** | [05_Strings](file:///d:/Python_Works/05_Strings) | String immutability & interning, Slicing `[start:stop:step]`, Case conversion, Search, Frequency |
-| **Section 5** | [06_Patterns](file:///d:/Python_Works/06_Patterns) | Nested loop logic, Grid pattern generation, Star & Number pattern visualization |
-| **Section 6** | [07_Functions](file:///d:/Python_Works/07_Functions) | LEGB Scope, `*args`/`**kwargs`, Lambda, Higher-Order (`map`/`filter`), Recursion, Modules & Packages |
-| **Section 7** | [08_Collections](file:///d:/Python_Works/08_Collections) | Lists, Tuples, Sets, Dictionaries, Hash Table $O(1)$ lookups, List Comprehension, Searching & Sorting |
-| **Section 8** | [09_Tasks](file:///d:/Python_Works/09_Tasks) | Daily challenge problem breakdown, Special numbers (Armstrong, Perfect, Palindrome, Strong) |
-| **Section 9** | [10_Exception_Handling](file:///d:/Python_Works/10_Exception_Handling) | Robust code, `try`, `except`, `else`, `finally`, built-in exception hierarchy, custom exceptions |
-| **Section 10** | [11_File_Handling](file:///d:/Python_Works/11_File_Handling) | Disk I/O, file modes (`r`, `w`, `a`), context managers `with open()`, file read exceptions |
-| **Section 11** | [12_OOPs](file:///d:/Python_Works/12_OOPs) | Classes, Objects, `__init__`, `self`, Inheritance, Encapsulation, Polymorphism, Abstraction |
-| **Section 12** | Advanced Python | Shallow/Deep Copy, Memory Management, Reference Counting, GIL, Duck Typing, `__name__ == "__main__"` |
+> **Complete Comprehensive Reference:** This guide covers **all technical concepts, syntax rules, methods, formulas, algorithms, and code examples** corresponding to every file and folder in the `Python_Works` workspace (`01_Basics` ➔ `12_OOPs`).
 
 ---
 
-## 📁 Section 1: 01_Basics — Execution, Memory & Operators
-
-### Q1. What is Python and how does it execute code?
-**Answer:**
-Python is a high-level, dynamically-typed, interpreted language. Execution follows a 2-step process:
+## 🧭 Master Folder & Topic Index
 
 ```
-[ Your Code (.py) ] ──> ( Python Compiler ) ──> [ Bytecode (.pyc) ] ──> ( Python Virtual Machine PVM ) ──> [ Output ]
+Python_Works/
+├── 📁 01_Basics               ➔ Execution, Variables, Calculations, Conversions, Operators
+├── 📁 02_Decision_Making      ➔ If-Else, Logical Operators, Nested-If, Ternary Operator
+├── 📁 03_While_Loops          ➔ While iteration, Number reversals, Digit math, Special numbers
+├── 📁 04_For_Loops            ➔ For iteration, range(), Prime checks, Factorials, Range series
+├── 📁 05_Strings              ➔ Slicing, Casing, Search/Frequency, Validation methods
+├── 📁 06_Patterns             ➔ Grid logic, Star pyramids, Inverted triangles, Exam patterns
+├── 📁 07_Functions            ➔ LEGB Scope, *args/**kwargs, Lambda, Map/Filter/Reduce, Recursion
+├── 📁 08_Collections          ➔ List, Dict, Set, Tuple, Hash Tables, Comprehensions, Search/Sort
+├── 📁 09_Tasks                ➔ Daily challenge algorithms & special number formulas
+├── 📁 10_Exception_Handling   ➔ try/except/else/finally, Built-in errors, Assertions, Custom errors
+├── 📁 11_File_Handling        ➔ Disk I/O, File modes, Read/Write methods, Context managers
+└── 📁 12_OOPs                 ➔ Classes, __init__, self, Encapsulation, Inheritance, Polymorphism
 ```
-
-1. **Compilation:** Code is compiled into intermediate **Bytecode** (`.pyc`).
-2. **Interpretation:** The **Python Virtual Machine (PVM)** executes bytecode line-by-line.
-
-> 🔍 **Analogy:** Think of `.py` code as a recipe in English. Bytecode is the standardized musical score, and PVM is the musician playing it.
 
 ---
 
-### Q2. How do Variables & Memory Allocation work in Python?
-**Answer:**
-In Python, **everything is an object**. Variables are **name tags (references)** pointing to objects in memory!
+## 📁 1. 01_Basics — Core Architecture, Variables & Operators
+
+### 1.1 Python Architecture & Code Execution
+Python uses a 2-stage execution model:
+
+```
+[ Source (.py) ] ──> ( Python Compiler ) ──> [ Bytecode (.pyc) ] ──> ( PVM Interpreter ) ──> [ CPU Execution ]
+```
+
+1. **Compilation Phase:** Translates `.py` source code into intermediate **Bytecode** (`.pyc`).
+2. **Interpretation Phase:** The **Python Virtual Machine (PVM)** executes bytecode line-by-line.
+
+---
+
+### 1.2 Variables & Memory Allocation Model
+In Python, variables are **labels (pointers)** to objects stored in memory.
 
 ```python
 x = 10
 y = 10
-# Both x and y point to the EXACT SAME integer object in memory!
+# Both x and y point to the exact same memory address!
 print(id(x) == id(y))  # Output: True
 ```
 
 ---
 
-### Q3. Explain Mutable vs. Immutable Data Types.
-**Answer:**
-
-> 🔍 **Analogy:**  
-> - **Immutable = Sealed Glass Bottle:** Cannot change contents inside. Replacing value creates a new bottle (`id()` changes).  
-> - **Mutable = Open Cardboard Box:** Can modify, add, or remove contents in-place (`id()` stays the same).
+### 1.3 Data Types & Mutability Classification
+- **Immutable Types:** State **cannot** be altered in-place. Modifying creates a new memory object.  
+  `int`, `float`, `complex`, `str`, `tuple`, `bool`, `frozenset`, `bytes`
+- **Mutable Types:** State **can** be altered in-place (`id()` remains unchanged).  
+  `list`, `dict`, `set`, `bytearray`
 
 ```python
-# Immutable (str)
-s = "Hello"
-print(id(s))
-s = s + " World"  # Creates NEW object!
-print(id(s))      # Different ID!
+# Modifying a list in-place (Mutable)
+nums = [1, 2]
+print(id(nums))        # Memory Address A
+nums.append(3)
+print(id(nums))        # Memory Address A (Unchanged!)
 
-# Mutable (list)
-lst = [1, 2]
-print(id(lst))
-lst.append(3)     # Modifies IN-PLACE!
-print(id(lst))    # Same ID!
+# Modifying a string (Immutable)
+text = "Hello"
+print(id(text))        # Memory Address B
+text += " World"
+print(id(text))        # Memory Address C (New Object Created!)
 ```
 
 ---
 
-### Q4. Division (`/`) vs. Floor Division (`//`) vs. Modulus (`%`)
-**Answer:**
+### 1.4 Arithmetic, Conversions & Financial Calculations
 
+#### A. Division Operators
 ```python
-print(7 / 2)   # 3.5  (Float Division — Always float)
-print(7 // 2)  # 3    (Floor Division — Rounds down to whole integer)
-print(-7 // 2) # -4   (Rounds down towards negative infinity!)
-print(7 % 2)   # 1    (Modulus — Remainder of division)
+print(7 / 2)   # Float Division  -> 3.5 (Always returns float)
+print(7 // 2)  # Floor Division  -> 3   (Rounds down to integer)
+print(-7 // 2) # Floor Division  -> -4  (Rounds down towards negative infinity)
+print(7 % 2)   # Modulus         -> 1   (Remainder of division)
+```
+
+#### B. Key formulas from `Calculations/` & `Conversions/`
+- **BMI (Body Mass Index):** `bmi = weight / (height ** 2)`
+- **BMR (Basal Metabolic Rate):** `bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5`
+- **Simple Interest:** `si = (principal * rate * time) / 100`
+- **Celsius to Fahrenheit:** `f = (c * 9/5) + 32`
+- **Days/Hours/Minutes/Seconds Conversion:**
+  ```python
+  total_sec = 90061
+  days = total_sec // 86400
+  hours = (total_sec % 86400) // 3600
+  minutes = (total_sec % 3600) // 60
+  seconds = total_sec % 60
+  # Output: 1 Days, 1 Hours, 1 Minutes, 1 Seconds
+  ```
+
+#### C. Variable Swapping (`swap_two_no.py`)
+```python
+a, b = 5, 10
+# Pythonic tuple unpacking swap (no temp variable required):
+a, b = b, a
+print(a, b)  # Output: 10, 5
 ```
 
 ---
 
-## 📁 Section 2: 02_Decision_Making — Conditional Logic & Boolean Algebra
+## 📁 2. 02_Decision_Making — Branching & Boolean Logic
 
-### Q5. Truth Value Testing: What is "Truthy" and "Falsy"?
-**Answer:**
-In boolean conditions (`if`/`while`), the following evaluate to `False` (**Falsy**):
-- ❌ `None` and `False`
-- ❌ Numeric zeros: `0`, `0.0`, `0j`
-- ❌ Empty collections: `""`, `[]`, `()`, `{}`, `set()`, `range(0)`
-
-Everything else evaluates to `True` (**Truthy**)!
-
----
-
-### Q6. What is Short-Circuit Evaluation?
-**Answer:**
-Python evaluates `and` / `or` conditions from left to right and stops as soon as the result is determined:
-- **`and`**: If the 1st condition is `False`, the rest is skipped.
-- **`or`**: If the 1st condition is `True`, the rest is skipped.
-
----
-
-### Q7. What is the Ternary Operator?
-**Answer:**
-A single-line conditional expression.
-**Syntax:** `value_if_true if condition else value_if_false`
-```python
-age = 20
-status = "Adult" if age >= 18 else "Minor"  # Output: "Adult"
-```
-
----
-
-## 📁 Section 3: 03_While_Loops & 04_For_Loops — Control Statements & Ranges
-
-### Q8. Difference between `break`, `continue`, and `pass`
-
-| Statement | Action |
-| :--- | :--- |
-| **`break`** | 🛑 Exits and terminates the loop immediately. |
-| **`continue`** | ⏭️ Skips remainder of current iteration & jumps to next iteration. |
-| **`pass`** | 🧱 Null placeholder that does nothing (satisfies syntax requirement). |
-
----
-
-### Q9. How does `loop...else` work?
-**Answer:**
-The `else` block on a loop runs **ONLY if the loop finishes all iterations without hitting a `break`**.
+### 2.1 Conditional Branching (`if`, `elif`, `else`)
+Executes code blocks based on condition evaluation.
 
 ```python
-for num in [2, 4, 6]:
-    if num == 5:
-        print("Found!")
-        break
+# ATM Machine Logic Example (from 02_Decision_Making/If_Else/atm_machine.py)
+balance = 5000
+withdraw = int(input("Enter amount: "))
+
+if withdraw <= 0:
+    print("Invalid amount!")
+elif withdraw > balance:
+    print("Insufficient funds!")
 else:
-    print("5 not found in list!")  # Output: 5 not found in list!
+    balance -= withdraw
+    print(f"Withdrawal successful! Remaining balance: {balance}")
 ```
 
 ---
 
-### Q10. How does `range()` work in Python?
-**Answer:**
-`range(start, stop, step)` generates an immutable sequence of integers lazily (on demand in $O(1)$ memory).
-- `start` (default 0, inclusive)
-- `stop` (required, exclusive)
-- `step` (default 1, stride)
+### 2.2 Truth Value Testing (Truthy vs. Falsy)
+Python automatically converts conditions to boolean (`True` or `False`).
+
+| Falsy Values (`False`) | Truthy Values (`True`) |
+| :--- | :--- |
+| `None`, `False` | `True` |
+| Zeros: `0`, `0.0`, `0j` | Non-zero numbers: `1`, `-5`, `3.14` |
+| Empty collections: `""`, `[]`, `()`, `{}`, `set()` | Non-empty collections: `"a"`, `[1]`, `{"k": "v"}` |
 
 ---
 
-## 📁 Section 4: 05_Strings — Manipulation, Slicing & Methods
-
-### Q11. Explain String Slicing: `string[start:stop:step]`
-
-```
- Index (Positive):   0   1   2   3   4   5
- Character:        ' P   y   t   h   o   n '
- Index (Negative):  -6  -5  -4  -3  -2  -1
-```
+### 2.3 Short-Circuit Logic (`and`, `or`)
+- **`A and B`**: If `A` is `False`, `B` is **skipped** (returns `False`).
+- **`A or B`**: If `A` is `True`, `B` is **skipped** (returns `True`).
 
 ```python
-s = "Python"
-print(s[0:4])   # "Pyth" (index 0 to 3)
-print(s[::-1])  # "nohtyP" (Reverse string!)
-print(s[::2])   # "Pto" (Every 2nd character)
+# Divisible by both 3 and 5 (from Logical_Operators/divisible_by_3_and_5.py)
+num = 15
+if num % 3 == 0 and num % 5 == 0:
+    print("Divisible by 3 and 5")
 ```
 
 ---
 
-### Built-in String Methods Quick Catalog
+### 2.4 Ternary Conditional Operator
+**Syntax:** `true_value if condition else false_value`
 
-| Category | Method | Description |
-| :--- | :--- | :--- |
-| **Case** | `.lower()`, `.upper()`, `.title()`, `.capitalize()`, `.swapcase()` | Converts casing of characters. |
-| **Search** | `.find(sub)` (returns `-1` if absent), `.index(sub)` (raises `ValueError` if absent), `.count(sub)` | Finds substring locations and counts. |
-| **Trim/Split** | `.strip()`, `.lstrip()`, `.rstrip()`, `.split(sep)`, `sep.join(list)`, `.replace(old, new)` | Cleans, splits, joins, and replaces strings. |
-| **Check** | `.isalpha()`, `.isdigit()`, `.isalnum()`, `.isspace()`, `.isupper()`, `.islower()` | Boolean character validation checks. |
+```python
+num = 7
+result = "Even" if num % 2 == 0 else "Odd"  # Output: "Odd"
+```
 
 ---
 
-## 📁 Section 5: 06_Patterns — Nested Loop Logic
+## 📁 3. 03_While_Loops — Indefinite Iteration & Digit Mathematics
 
-### Q12. How do Nested Loops create patterns?
-**Answer:**
-- **Outer Loop:** Controls the number of **Rows**.
-- **Inner Loop:** Controls the number of **Columns / Symbols** per row.
+### 3.1 Loop Architecture & Controls
+```python
+# Syntax:
+# while condition:
+#     statement_block
+
+# Loop Statements:
+# break    -> Terminate loop immediately
+# continue -> Skip to next iteration
+# pass     -> Placeholder statement (no-op)
+```
+
+---
+
+### 3.2 Digit Extraction & Number Manipulation
+Common digit-processing patterns used in `Number_Problems/`:
 
 ```python
-# Pyramid Pattern Example
-n = 4
+n = 1234
+digit_sum = 0
+rev = 0
+
+while n > 0:
+    rem = n % 10        # 1. Extract last digit
+    digit_sum += rem    # 2. Add to sum
+    rev = rev * 10 + rem# 3. Build reversed number
+    n //= 10            # 4. Remove last digit
+
+# Output: digit_sum = 10, rev = 4321
+```
+
+---
+
+### 3.3 `while...else` Construct
+Runs the `else` block **only when loop exits naturally** (without `break`).
+
+```python
+# Guessing Game (from 03_While_Loops/Number_Problems/guess_number_game.py)
+secret = 7
+attempts = 3
+
+while attempts > 0:
+    guess = int(input("Guess number: "))
+    if guess == secret:
+        print("You won!")
+        break
+    attempts -= 1
+else:
+    print("Out of attempts! You lost.")  # Executes if while loop finishes naturally
+```
+
+---
+
+## 📁 4. 04_For_Loops — Definite Iteration, Sequences & Ranges
+
+### 4.1 `range()` Syntax & Performance
+Generates integer sequences lazily ($O(1)$ memory usage).  
+**Syntax:** `range(start, stop, step)`  
+*(Note: `start` is inclusive, `stop` is exclusive).*
+
+```python
+for i in range(10, 0, -2):
+    print(i, end=" ")  # Output: 10 8 6 4 2
+```
+
+---
+
+### 4.2 Prime Number & Range Algorithms
+
+```python
+# Checking if a number is Prime (from 04_For_Loops/Special_Numbers/prime.py)
+n = 29
+is_prime = True
+
+if n < 2:
+    is_prime = False
+else:
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            is_prime = False
+            break
+
+print("Prime" if is_prime else "Not Prime")  # Output: Prime
+```
+
+---
+
+## 📁 5. 05_Strings — Manipulation, Slicing & Complete Method Catalog
+
+### 5.1 String Slicing Syntax
+**Syntax:** `string[start:stop:step]`
+
+```python
+s = "PythonProgramming"
+
+print(s[0:6])     # "Python"      (Index 0 to 5)
+print(s[6:])      # "Programming" (Index 6 to end)
+print(s[::-1])    # "gnimmargorPnohtyP" (Reverse string)
+print(s[::2])     # "PtoPgamn"    (Step size of 2)
+```
+
+---
+
+### 5.2 Complete Built-in String Methods Reference
+
+#### A. Case Conversion
+```python
+s = "hello World"
+print(s.lower())      # "hello world"
+print(s.upper())      # "HELLO WORLD"
+print(s.title())      # "Hello World"
+print(s.capitalize()) # "Hello world"
+print(s.swapcase())   # "HELLO wORLD"
+```
+
+#### B. Inspection & Searching
+```python
+s = "banana"
+print(s.count("a"))      # 3
+print(s.find("a"))       # 1  (Returns -1 if not found)
+print(s.rfind("a"))      # 5  (Rightmost index)
+print(s.index("a"))      # 1  (Raises ValueError if not found)
+print(s.startswith("b")) # True
+print(s.endswith("a"))   # True
+```
+
+#### C. Validation (Boolean Checks)
+```python
+"123".isdigit()   # True
+"abc".isalpha()   # True
+"a12".isalnum()   # True
+"   ".isspace()   # True
+"abc".islower()   # True
+"ABC".isupper()   # True
+```
+
+#### D. Trimming, Splitting & Joining
+```python
+s = "  python  "
+print(s.strip())         # "python" (Removes leading & trailing whitespace)
+print(s.lstrip())        # "python  "
+print(s.rstrip())        # "  python"
+
+csv = "apple,banana,orange"
+fruits = csv.split(",")  # ['apple', 'banana', 'orange']
+joined = "-".join(fruits)# "apple-banana-orange"
+
+print("cat".replace("c", "b")) # "bat"
+```
+
+---
+
+## 📁 6. 06_Patterns — Nested Loops & Pattern Logic
+
+### 6.1 Logic Structure for Pattern Grids
+- **Outer Loop (`i`):** Manages **Row index** ($1 \dots N$).
+- **Inner Loop (`j`):** Manages **Spaces and Characters/Stars per row**.
+
+```python
+# Star Pyramid (from 06_Patterns/star_patterns.py)
+n = 5
 for i in range(1, n + 1):
-    print(" " * (n - i) + "*" * (2 * i - 1))
+    spaces = " " * (n - i)
+    stars = "*" * (2 * i - 1)
+    print(spaces + stars)
 ```
 
 ```
-   *
-  ***
- *****
-*******
+    *
+   ***
+  *****
+ *******
+*********
+```
+
+```python
+# Number Pattern Grid (from 06_Patterns/patterns.py)
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+```
+
+```
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
 ```
 
 ---
 
-## 📁 Section 6: 07_Functions — Scope (LEGB), Arguments & Recursion
+## 📁 7. 07_Functions — Scope, Positional/Keyword Args, Lambda & Recursion
 
-### Q13. What is the LEGB Scope Resolution Rule?
-When searching for a variable name, Python looks in 4 nested scopes:
+### 7.1 LEGB Scope Resolution Order
+Python resolves variable names in 4 nested scopes:
 
 $$\text{Local (L)} \longrightarrow \text{Enclosing (E)} \longrightarrow \text{Global (G)} \longrightarrow \text{Built-in (B)}$$
 
@@ -223,90 +371,175 @@ def outer():
     x = "Enclosing"
     def inner():
         x = "Local"
-        print(x)  # Prints "Local"
+        print(x) # Output: "Local"
     inner()
+
+outer()
 ```
 
 ---
 
-### Q14. `*args` vs `**kwargs`
-- `*args`: Collects positional arguments into a **Tuple**.
-- `**kwargs`: Collects keyword arguments into a **Dictionary**.
+### 7.2 Variable Arguments: `*args` and `**kwargs`
+- **`*args`**: Packs arbitrary positional arguments into a **Tuple**.
+- **`**kwargs`**: Packs arbitrary keyword arguments into a **Dictionary**.
 
 ```python
-def example(*args, **kwargs):
-    print("Positional (Tuple):", args)
-    print("Keyword (Dict):", kwargs)
+def flexi_func(*args, **kwargs):
+    print("Args (Tuple):", args)
+    print("Kwargs (Dict):", kwargs)
 
-example(1, 2, a=10, b=20)
-# Positional (Tuple): (1, 2)
-# Keyword (Dict): {'a': 10, 'b': 20}
+flexi_func(1, 2, 3, name="Alice", age=25)
+# Output:
+# Args (Tuple): (1, 2, 3)
+# Kwargs (Dict): {'name': 'Alice', 'age': 25}
 ```
 
 ---
 
-### Q15. Higher-Order Functions & Lambda
-- **`lambda args: expression`**: Anonymous single-line function.
-- **`map(func, iterable)`**: Applies `func` to every item.
-- **`filter(func, iterable)`**: Filters items where `func(item)` is `True`.
+### 7.3 Lambda & Higher-Order Functions (`map`, `filter`, `reduce`)
 
 ```python
-nums = [1, 2, 3, 4, 5]
-evens = list(filter(lambda x: x % 2 == 0, nums))  # [2, 4]
-squares = list(map(lambda x: x**2, nums))          # [1, 4, 9, 16, 25]
+from functools import reduce
+
+nums = [1, 2, 3, 4, 5, 6]
+
+# 1. Lambda (Anonymous function)
+square = lambda x: x**2
+
+# 2. Filter (Extracts elements where condition is True)
+evens = list(filter(lambda x: x % 2 == 0, nums)) # [2, 4, 6]
+
+# 3. Map (Transforms every element)
+doubled = list(map(lambda x: x * 2, nums))       # [2, 4, 6, 8, 10, 12]
+
+# 4. Reduce (Accumulates elements into a single value)
+total_sum = reduce(lambda acc, x: acc + x, nums) # 21
 ```
 
 ---
 
-## 📁 Section 7: 08_Collections — Lists, Tuples, Sets, Dicts & Algorithms
+### 7.4 Recursion & Base Case
+A function calling itself must have a **Base Case** to stop infinite calls and prevent `RecursionError` (Stack Overflow).
 
-### Collections Comparison Matrix
+```python
+# Recursive Factorial (from 07_Functions/Recursion/recursive_factorial.py)
+def factorial(n):
+    if n == 0 or n == 1: # Base Case
+        return 1
+    return n * factorial(n - 1) # Recursive Case
 
-| Collection | Syntax | Ordered | Mutable | Unique Only? | Primary Purpose |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **List** | `[1, 2]` | ✅ Yes | ✅ Yes | ❌ Duplicates ok | General ordered sequence. |
-| **Tuple** | `(1, 2)` | ✅ Yes | ❌ No | ❌ Duplicates ok | Immutable fixed records. |
-| **Set** | `{1, 2}` | ❌ No | ✅ Yes | ✅ Unique only | Fast membership & set operations. |
-| **Dictionary**| `{"a": 1}`| ✅ Yes (3.7+)| ✅ Yes | Keys: Unique | Key-Value fast lookup ($O(1)$). |
-
----
-
-### Q16. Why are Dictionary Lookups $O(1)$ Time Complexity?
-**Answer:**
-Dictionaries use **Hash Tables**. `hash(key)` directly maps the key to its exact memory slot address, allowing instant $O(1)$ access without scanning items sequentially.
+print(factorial(5)) # Output: 120
+```
 
 ---
 
-### Method Cheat Sheet for Collections
-- **List:** `.append()`, `.extend()`, `.insert()`, `.pop()`, `.remove()`, `.sort()`, `.reverse()`
-- **Dict:** `.get(key, default)` (Safe lookup!), `.keys()`, `.values()`, `.items()`, `.update()`, `.pop()`
-- **Set:** `.add()`, `.discard()` (Safe remove!), `.union()` (`|`), `.intersection()` (`&`), `.difference()` (`-`)
+## 📁 8. 08_Collections — Lists, Dictionaries, Sets, Tuples & Algorithms
+
+### 8.1 Comparison Matrix
+
+| Property | List (`[]`) | Tuple (`()`) | Set (`{}`) | Dictionary (`{k: v}`) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Ordering** | Ordered | Ordered | Unordered | Key-ordered (3.7+) |
+| **Mutability** | Mutable | Immutable | Mutable | Mutable |
+| **Duplicates** | Allowed | Allowed | Unique Only | Unique Keys |
+| **Indexing** | `lst[i]` | `tup[i]` | No indexing | `dict[key]` |
 
 ---
 
-## 📁 Section 8: 09_Tasks — Special Numbers & Daily Problems
+### 8.2 Complete Method References
 
-### 1. Armstrong Number
-Sum of digits raised to the power of number of digits equals the original number.
-$$\text{Example: } 153 \longrightarrow 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153$$
+#### A. List Methods (`List_Operations/`)
+- `lst.append(x)` — Adds `x` to end.
+- `lst.extend(iterable)` — Appends all items from iterable.
+- `lst.insert(i, x)` — Inserts `x` at index `i`.
+- `lst.remove(x)` — Removes first occurrence of `x`.
+- `lst.pop([i])` — Removes & returns element at index `i` (default last).
+- `lst.sort(key=None, reverse=False)` — Sorts **in-place**.
+- `lst.reverse()` — Reverses list **in-place**.
 
-### 2. Perfect Number
-Sum of proper divisors (excluding itself) equals the original number.
-$$\text{Example: } 6 \longrightarrow 1 + 2 + 3 = 6$$
+#### B. Dictionary Methods (`Dictionaries/`)
+- `d.get(key, default=None)` — Returns value safely without raising `KeyError`.
+- `d.keys()`, `d.values()`, `d.items()` — View objects for keys, values, and `(k, v)` tuples.
+- `d.update(other_dict)` — Merges key-values from another dict.
+- `d.pop(key)` — Removes `key` and returns its value.
 
-### 3. Palindrome & Strong Numbers
-- **Palindrome:** Read same forward and backward (`121`, `"madam"`).
-- **Strong Number:** Sum of factorials of digits equals original number ($145 = 1! + 4! + 5!$).
+#### C. Set Operations (`Set`)
+- `s1.union(s2)` (`s1 | s2`) — Elements in either set.
+- `s1.intersection(s2)` (`s1 & s2`) — Elements in BOTH sets.
+- `s1.difference(s2)` (`s1 - s2`) — Elements in `s1` but NOT `s2`.
+- `s1.symmetric_difference(s2)` (`s1 ^ s2`) — Elements in either set, but not both.
 
 ---
 
-## 📁 Section 9: 10_Exception_Handling — Errors & Exception Control
+### 8.3 List Comprehension Syntax
+**Syntax:** `[expression for item in iterable if condition]`
 
-### Q17. How does `try...except...else...finally` work?
-**Answer:**
+```python
+# List of squares for even numbers 1..10
+squares = [x**2 for x in range(1, 11) if x % 2 == 0]
+# Output: [4, 16, 36, 64, 100]
+```
+
+---
+
+### 8.4 Searching & Sorting Algorithms
+
+#### A. Linear Search vs. Binary Search
+- **Linear Search:** Checks items one by one. Time Complexity: $O(N)$.
+- **Binary Search:** Operates on **sorted arrays**, halving search space. Time Complexity: $O(\log N)$.
+
+```python
+# Binary Search Implementation
+def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+```
+
+#### B. Second Largest Finding Algorithm (`second_largest.py`)
+```python
+def find_second_largest(arr):
+    first = second = float('-inf')
+    for num in arr:
+        if num > first:
+            second = first
+            first = num
+        elif num > second and num != first:
+            second = num
+    return second
+
+print(find_second_largest([12, 35, 1, 10, 34, 1]))  # Output: 34
+```
+
+---
+
+## 📁 9. 09_Tasks — Special Number Formulas & Math Logic
+
+| Special Number | Mathematical Definition | Example |
+| :--- | :--- | :--- |
+| **Armstrong Number** | $n$-digit number equal to the sum of digits raised to $n$-th power. | $153 = 1^3 + 5^3 + 3^3$ |
+| **Perfect Number** | Equal to sum of all its proper divisors (excluding itself). | $6 = 1 + 2 + 3$ |
+| **Palindrome** | Reads the same forwards and backwards. | $121$, `"madam"` |
+| **Strong Number** | Equal to sum of factorials of its digits. | $145 = 1! + 4! + 5!$ |
+| **Harshad Number** | Number divisible by the sum of its digits. | $18 \rightarrow 18 \% (1+8) == 0$ |
+| **Automorphic Number**| Number whose square ends in the same digits as the number itself. | $25^2 = 625$ (ends in 25) |
+| **Spy Number** | Sum of digits equals product of digits. | $1124 \rightarrow (1+1+2+4) == (1*1*2*4)$ |
+
+---
+
+## 📁 10. 10_Exception_Handling — Errors, Assertions & Custom Exceptions
+
+### 10.1 `try...except...else...finally` Architecture
 
 ```
-          [ try Block ] (Runs risk code)
+          [ try Block ] (Risky code)
                 │
         ┌───────┴───────┐
    (Exception?)      (No Exception?)
@@ -321,120 +554,207 @@ $$\text{Example: } 6 \longrightarrow 1 + 2 + 3 = 6$$
 
 ```python
 try:
-    num = int(input("Enter number: "))
-    result = 10 / num
+    num = int("10")
+    result = 100 / num
 except ZeroDivisionError:
     print("Cannot divide by zero!")
 except ValueError:
-    print("Invalid number input!")
+    print("Invalid string to integer conversion!")
 else:
-    print("Result:", result)      # Runs ONLY if no exception occurred
+    print(f"Success! Result: {result}")
 finally:
-    print("Execution completed.") # ALWAYS runs (useful for cleanup)
+    print("Cleanup: Execution completed.")
 ```
 
 ---
 
-### Q18. Custom Exceptions
-Inherit from Python's built-in `Exception` class:
+### 10.2 Common Built-in Exceptions
+
+- **`ZeroDivisionError`**: Division or modulo by zero (`5 / 0`).
+- **`IndexError`**: Accessing sequence index out of bounds (`lst[99]`).
+- **`KeyError`**: Accessing missing dictionary key (`dict["missing"]`).
+- **`ValueError`**: Function receives argument of right type but inappropriate value (`int("abc")`).
+- **`TypeError`**: Operation applied to inappropriate data type (`"5" + 5`).
+- **`FileNotFoundError`**: Attempting to open non-existent disk file.
+
+---
+
+### 10.3 Assertions & Custom Exceptions
 
 ```python
-class InsufficientBalanceError(Exception):
+# 1. Assertion (from 10_Exception_Handling/assert_error_handling.py)
+age = -5
+assert age >= 0, "Age cannot be negative!"  # Raises AssertionError if False
+
+# 2. Custom Exception (from 10_Exception_Handling/custom_exception_raise.py)
+class InvalidAgeError(Exception):
     pass
 
-balance = 100
-withdraw = 150
-if withdraw > balance:
-    raise InsufficientBalanceError("Balance is too low!")
+def check_voter(age):
+    if age < 18:
+        raise InvalidAgeError("Must be 18 or older to vote!")
 ```
 
 ---
 
-## 📁 Section 10: 11_File_Handling — File I/O & Disk Operations
+## 📁 11. 11_File_Handling — File I/O, File Modes & Context Managers
 
-### Q19. How do File Open Modes and Context Managers work?
-**Answer:**
+### 11.1 File Modes Matrix
+
+| Mode | Name | Behavior | Creates File if Missing? | Truncates (Clears) File? |
+| :--- | :--- | :--- | :--- | :--- |
+| **`"r"`** | Read | Opens for reading. (Default) | ❌ (Raises `FileNotFoundError`) | ❌ No |
+| **`"w"`** | Write | Opens for writing. | ✅ Yes | ✅ Yes (Overwrites file) |
+| **`"a"`** | Append | Opens for appending at file end. | ✅ Yes | ❌ No |
+| **`"r+"`**| Read/Write | Opens for reading and writing. | ❌ (Raises `FileNotFoundError`) | ❌ No |
+
+---
+
+### 11.2 Reading & Writing Methods (`file_read_methods.py`)
 
 ```python
-# Best Practice: Use 'with open()' — automatically closes file even if errors occur!
-with open("sample.txt", "w") as file:
-    file.write("Hello Python File Handling!\n")
+# Context Manager 'with open()' automatically handles file closure:
+with open("sample.txt", "w") as f:
+    f.write("Line 1: Python\nLine 2: File Handling\n")
 
-with open("sample.txt", "r") as file:
-    content = file.read()
-    print(content)
+with open("sample.txt", "r") as f:
+    print(f.read())       # Reads ENTIRE file content as a single string
+    
+with open("sample.txt", "r") as f:
+    print(f.readline())   # Reads a SINGLE line ending with \n
+
+with open("sample.txt", "r") as f:
+    print(f.readlines())  # Reads ALL lines into a List of strings ['Line 1...\n', ...]
 ```
-
-| Mode | Name | Description |
-| :--- | :--- | :--- |
-| **`"r"`** | Read | Opens for reading (default). Raises `FileNotFoundError` if file missing. |
-| **`"w"`** | Write | Opens for writing. **Overwrites** existing file or creates new file. |
-| **`"a"`** | Append | Opens for appending. Adds new content to **end** of file. |
-| **`"r+"`**| Read/Write | Opens for both reading and writing. |
 
 ---
 
-## 📁 Section 11: 12_OOPs — Object-Oriented Programming
-
-### Q20. What are the 4 Pillars of Object-Oriented Programming (OOP)?
-**Answer:**
-
-```
-                 +-----------------------------------+
-                 | 🏛️ 4 Pillars of Python OOP         |
-                 +-----------------------------------+
-                 | 1. Encapsulation (Data Hiding)   |
-                 | 2. Abstraction   (Hiding Complexity)|
-                 | 3. Inheritance   (Code Reusability) |
-                 | 4. Polymorphism  (Many Forms)     |
-                 +-----------------------------------+
-```
+### 11.3 File Exception Safe Handling (`file_read_exception.py`)
 
 ```python
-class Animal:
-    def __init__(self, name):
-        self.name = name  # Instance Attribute
-        self._private_tag = "Secret"  # Encapsulation (_protected)
-
-    def speak(self):
-        pass  # Abstraction
-
-class Dog(Animal):  # Inheritance
-    def speak(self):
-        return f"{self.name} says Woof!"  # Polymorphism
-
-class Cat(Animal):  # Inheritance
-    def speak(self):
-        return f"{self.name} says Meow!"  # Polymorphism
-
-dog = Dog("Buddy")
-cat = Cat("Whiskers")
-print(dog.speak())  # Buddy says Woof!
-print(cat.speak())  # Whiskers says Meow!
+try:
+    with open("non_existent_file.txt", "r") as file:
+        data = file.read()
+except FileNotFoundError:
+    print("Error: The requested file does not exist on disk!")
 ```
 
 ---
 
-## 📁 Section 12: Advanced Interview Concepts
+## 📁 12. 12_OOPs — Object-Oriented Programming Principles
 
-### Q21. Shallow Copy vs Deep Copy
-- **Shallow Copy (`copy.copy()`):** Duplicates outer container, but **shares references** to nested mutable objects.
-- **Deep Copy (`copy.deepcopy()`):** Recursively duplicates **all nested objects**, creating a 100% independent twin.
+### 12.1 Classes, Objects, `__init__` & `self`
+- **Class:** Blueprint / template for creating objects.
+- **Object:** Instance of a class stored in memory.
+- **`__init__`:** Constructor method executed automatically on object creation.
+- **`self`:** Reference to the current instance of the class.
+
+```python
+class Student:
+    # Class Attribute (Shared by all instances)
+    school_name = "Tech Academy"
+
+    def __init__(self, name, age):
+        # Instance Attributes (Unique to each instance)
+        self.name = name
+        self.age = age
+
+    # Instance Method
+    def display_info(self):
+        return f"Student: {self.name}, Age: {self.age}, School: {self.school_name}"
+
+s1 = Student("Alice", 20)
+print(s1.display_info())
+```
 
 ---
 
-### Q22. Memory Management & Garbage Collection
-1. **Reference Counting:** Objects track how many pointers reference them. Dropping to `0` deallocates memory instantly.
-2. **Generational Garbage Collector:** Collects **cyclic dead references** across 3 generations (Gen 0, Gen 1, Gen 2).
+### 12.2 The 4 Pillars of OOP
+
+```
+               +-----------------------------------+
+               | 🏛️ 4 Pillars of Python OOP         |
+               +-----------------------------------+
+               | 1. Encapsulation (Data Hiding)   |
+               | 2. Abstraction   (Hiding Detail)  |
+               | 3. Inheritance   (Code Reuse)     |
+               | 4. Polymorphism  (Overriding)     |
+               +-----------------------------------+
+```
+
+#### A. Encapsulation (Access Modifiers)
+- **Public:** `self.name` (Accessible everywhere).
+- **Protected:** `self._bank_code` (Prefix `_`, convention for subclass access).
+- **Private:** `self.__pin` (Prefix `__`, triggers name mangling `_ClassName__pin`).
+
+#### B. Inheritance
+Child class inherits attributes and methods from Parent class using `super()`.
+
+#### C. Polymorphism (Method Overriding)
+Subclasses provide custom implementations of methods defined in their parent class.
+
+#### D. Abstraction
+Abstract Base Classes (`abc.ABC`) enforce method implementations in child classes.
+
+```python
+from abc import ABC, abstractmethod
+
+# Abstraction
+class Vehicle(ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass
+
+# Inheritance & Polymorphism
+class Car(Vehicle):
+    def start_engine(self):
+        return "Car engine started with key ignition!"
+
+class ElectricBike(Vehicle):
+    def start_engine(self):
+        return "Electric bike powered on silently!"
+
+vehicles = [Car(), ElectricBike()]
+for v in vehicles:
+    print(v.start_engine())  # Polymorphic method call
+```
 
 ---
 
-### Q23. What is the GIL (Global Interpreter Lock)?
-A mutex lock in CPython ensuring **only one thread executes Python bytecode at a time**.
-- ✅ Works great for **I/O-bound** multithreading (downloads, file reading).
-- ❌ For **CPU-bound** multi-core parallelism, use `multiprocessing`.
+## 📁 13. Advanced Python Interview Concepts
+
+### 13.1 Shallow Copy vs. Deep Copy
+
+```python
+import copy
+
+original = [[1, 2], [3, 4]]
+
+# Shallow Copy: Copies container, but shares nested references!
+shallow = copy.copy(original)
+
+# Deep Copy: Recursively duplicates ALL nested container objects!
+deep = copy.deepcopy(original)
+
+original[0][0] = 999
+print(shallow[0][0])  # 999 (Affected by change!)
+print(deep[0][0])     # 1   (Unchanged, independent memory copy!)
+```
 
 ---
 
-### Q24. What is `if __name__ == "__main__":`?
-Assigns `"__main__"` when a script runs directly, and `"module_name"` when imported. Prevents unwanted execution during library imports.
+### 13.2 Memory Management & Garbage Collector (GC)
+1. **Reference Counting:** Every object tracks how many references point to it. When count reaches `0`, memory is instantly deallocated.
+2. **Generational Garbage Collector:** Collects **cyclic references** (e.g., Object A pointing to Object B and Object B pointing back to A) across 3 generations (Gen 0, Gen 1, Gen 2).
+
+---
+
+### 13.3 GIL (Global Interpreter Lock)
+A mutex in CPython that restricts execution of Python bytecodes to a **single thread at a time**.
+- ✅ Useful for **I/O-bound** multithreading (networking, file reads).
+- ❌ For multi-core **CPU-bound** speedups, use `multiprocessing`.
+
+---
+
+### 13.4 `if __name__ == "__main__":`
+Built-in variable `__name__` evaluates to `"__main__"` when a script is executed directly from terminal, but evaluates to module name when imported into another script.
