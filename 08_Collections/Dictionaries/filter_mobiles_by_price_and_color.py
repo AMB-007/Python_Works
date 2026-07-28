@@ -1,4 +1,4 @@
-﻿# Extract model name and price from a nested dictionary of mobiles
+﻿# Filter mobiles with price above 90k and color black
 
 mobiles = {
     "Apple": {"model": "iPhone 13", "price": 120000, "color": "black"},
@@ -6,10 +6,9 @@ mobiles = {
     "Google": {"model": "Pixel 6", "price": 40000, "color": "black"}
 }
 
-result = {}
+print("Mobiles priced above 90k and black in color:")
 for brand, details in mobiles.items():
-    model = details.get("model")
     price = details.get("price")
-    result[brand] = [model, price]
-
-print("Mobile Model and Price:", result)
+    color = details.get("color")
+    if price > 90000 and color == "black":
+        print(f"- {brand}: {details}")
