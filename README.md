@@ -98,10 +98,13 @@ Python_Works/
 │   ├── 📄 file_with_statement.py       # Context managers (`with open()`)
 │   └── 📄 file_read_methods.py         # `readline()`, `readlines()`, `readable()`
 │
-├── 📁 12_OOPs/                    # Object-Oriented Programming
-│   └── 📁 Basics/
-│       └── 📄 oops_intro.py           # Classes, Objects, Attributes, Methods
+├── 📁 12_OOPs/                    # Object-Oriented Programming (OOP)
+│   ├── 📁 Abstraction/           # Abstract Base Classes (ABC) & @abstractmethod
+│   ├── 📁 Basics/                # Classes, Objects, Instance state & ATM simulation
+│   ├── 📁 Inheritance/           # Single-Level & Multi-Level Inheritance
+│   └── 📁 Polymorphism/          # Polymorphism, Method Overriding & Overloading
 │
+├── 📁 Python-pratice/             # Practice workspace & problem sets
 ├── 📄 PYTHON_TECHNICAL_THEORY.md  # Comprehensive Python Interview & Theory Guide
 └── 📄 README.md                   # Repository Documentation
 ```
@@ -122,7 +125,7 @@ Python_Works/
 | **`08_Collections`** | Lists, Tuples, Dictionaries, Sets, List Comprehensions, element search/sort. | `nested_dict_operations.py`, `rotate_list_right.py` |
 | **`10_Exception_Handling`**| `try-except-else-finally`, raising custom exceptions, `assert` debugging. | `exception_handling_intro.py`, `custom_exception_raise.py` |
 | **`11_File_Handling`** | File modes (`"r"`, `"w"`, `"a"`), `with open()`, line reading methods. | `file_with_statement.py`, `file_read_methods.py` |
-| **`12_OOPs`** | Classes, instances, object attributes, methods, OOP paradigms. | `oops_intro.py` |
+| **`12_OOPs`** | Classes, Objects, Inheritance, Polymorphism, Abstraction, Method Overriding/Overloading. | `abstraction_intro.py`, `atm_class_simulation.py`, `single_and_multilevel_inheritance.py` |
 
 ---
 
@@ -144,7 +147,7 @@ For complete technical notes, theoretical explanations, method references, and i
 1. **Core Data Types & Memory Management** (Mutable vs. Immutable, Garbage Collection, Reference Counting).
 2. **Built-in Data Structure References** (Complete method list for `list`, `dict`, `set`, `str`).
 3. **Built-in Functions & Math Module Reference** (`enumerate`, `zip`, `map`, `filter`, `math.sqrt`, `math.gcd`).
-4. **OOP Principles** (Encapsulation, Inheritance, Polymorphism, Abstraction).
+4. **OOP Principles** (Encapsulation, Single/Multilevel Inheritance, Polymorphism, Abstraction with `abc.ABC`).
 5. **Special Number Definitions** (Armstrong, Harshad, Automorphic, Perfect, Spy numbers).
 
 ---
@@ -165,8 +168,8 @@ cd Python_Works
 You can run any `.py` file directly using Python:
 
 ```bash
-# Example 1: Run a basics program
-python 01_Basics/Calculations/bmi.py
+# Example 1: Run an OOP Abstraction program
+python 12_OOPs/Abstraction/abstraction_intro.py
 
 # Example 2: Run a string frequency program
 python 05_Strings/Frequency_and_Search/first_repeating_char.py
